@@ -62,7 +62,7 @@ export default function Footer() {
             <div className="lg:col-span-4 space-y-10">
               <div className="space-y-8">
                 <Link to="/" className="block transition-transform hover:scale-105 origin-left">
-                  <img src="/logo/logo.png" alt="Primeprintshop" className="h-10 md:h-12 object-contain brightness-0 invert" />
+                  <img src="/logo/logo.png" alt="Printer Mixer" className="h-10 md:h-12 object-contain brightness-0 invert" />
                 </Link>
                 <div className="mt-4 flex items-center gap-3">
                   <img src="/logo/primefixsolutions-logo.png" alt="Prime Fix Solutions" className="h-6 object-contain brightness-0 invert opacity-80" />
@@ -92,7 +92,7 @@ export default function Footer() {
                   </div>
                   <div>
                     <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1">24/7 Expert Support</p>
-                    <p className="text-[14px] font-bold text-slate-200">info@primeprintshop.shop</p>
+                    <p className="text-[14px] font-bold text-slate-200">info@printermixer.com</p>
                   </div>
                 </div>
               </div>
@@ -169,7 +169,7 @@ export default function Footer() {
         <div className="w-full mx-auto px-6 lg:px-16">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="text-[11px] font-bold uppercase tracking-widest text-slate-500">
-              © 2026 Primeprintshop. All hardware properties of their respective owners.
+              © 2026 Printer Mixer. All hardware properties of their respective owners.
             </div>
 
             <div className="flex flex-wrap justify-center items-center gap-8 text-[10px] font-black tracking-widest uppercase">

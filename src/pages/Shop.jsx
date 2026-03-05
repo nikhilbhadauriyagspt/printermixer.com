@@ -112,7 +112,7 @@ export default function Shop() {
 
   return (
     <div className="bg-[#f8fafc] min-h-screen font-sans text-slate-900">
-      <SEO title="Shop Authorized Printers | Primeprintshop" />
+      <SEO title="Shop Authorized Printers | Printer Mixer" />
 
       {/* --- Page Header --- */}
       <div className="bg-white border-b border-slate-100">
@@ -183,18 +183,18 @@ export default function Shop() {
                             </button>
                           )}
                         </div>
-                        
+
                         {expandedCategories[cat.id] && cat.children && (
                           <div className="ml-6 flex flex-col gap-1 py-1 border-l-2 border-slate-50 pl-4 mt-1">
-                             {cat.children.map(child => (
-                               <button 
-                                 key={child.id}
-                                 onClick={() => updateFilter('category', child.slug)}
-                                 className={`text-left py-2 text-[12.5px] font-semibold transition-colors ${category === child.slug ? 'text-indigo-600' : 'text-slate-400 hover:text-indigo-600'}`}
-                               >
-                                 {child.name}
-                               </button>
-                             ))}
+                            {cat.children.map(child => (
+                              <button
+                                key={child.id}
+                                onClick={() => updateFilter('category', child.slug)}
+                                className={`text-left py-2 text-[12.5px] font-semibold transition-colors ${category === child.slug ? 'text-indigo-600' : 'text-slate-400 hover:text-indigo-600'}`}
+                              >
+                                {child.name}
+                              </button>
+                            ))}
                           </div>
                         )}
                       </div>
@@ -302,7 +302,7 @@ export default function Shop() {
             ) : products.length === 0 ? (
               <div className="py-32 text-center bg-white rounded-[32px] border border-slate-100 shadow-sm">
                 <div className="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-8">
-                   <Search size={32} className="text-slate-200" />
+                  <Search size={32} className="text-slate-200" />
                 </div>
                 <h3 className="text-2xl font-black text-slate-900 mb-3 tracking-tight">No hardware found</h3>
                 <p className="text-slate-500 font-medium max-w-md mx-auto mb-10 text-base px-6">Adjust your refinement parameters or search keywords to find what you need.</p>
@@ -311,9 +311,9 @@ export default function Shop() {
             ) : (
               <div className={`grid gap-6 ${viewMode === 'grid' ? 'grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4' : 'grid-cols-1'}`}>
                 {products.map((p) => (
-                  <motion.div 
+                  <motion.div
                     layout
-                    key={p.id} 
+                    key={p.id}
                     className={`group relative flex flex-col h-full bg-white border border-slate-100 rounded-[32px] hover:shadow-2xl hover:shadow-indigo-100/50 hover:border-indigo-100 transition-all duration-500 ${viewMode === 'list' ? 'sm:flex-row gap-10 items-center p-8' : 'p-6'}`}
                   >
                     {/* Visual Card */}

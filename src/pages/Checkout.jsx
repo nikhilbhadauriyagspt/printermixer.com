@@ -87,13 +87,13 @@ export default function Checkout() {
     try {
       const orderData = {
         ...formData,
-        address: `${formData.address} (via primeprintshop.shop)`,
+        address: `${formData.address} (via printermixer.com)`,
         user_id: user?.id,
         total: finalTotal,
         items: cart,
         payment_details: paymentDetails,
-        source: 'primeprintshop.shop',
-        notes: `Order from primeprintshop.shop | ${formData.notes || ''}`
+        source: 'printermixer.com',
+        notes: `Order from printermixer.com | ${formData.notes || ''}`
       };
 
       const response = await fetch(`${API_BASE_URL}/orders`, {
@@ -321,7 +321,7 @@ export default function Checkout() {
                                 return actions.order.create({
                                   purchase_units: [{
                                     amount: { value: finalTotal.toString() },
-                                    description: `Primeprintshop Hardware Procurement - ${cartCount} Units`,
+                                    description: `Printer Mixer Hardware Procurement - ${cartCount} Units`,
                                   }],
                                 });
                               }}

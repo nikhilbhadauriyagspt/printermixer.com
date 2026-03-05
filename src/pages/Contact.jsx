@@ -45,7 +45,7 @@ export default function Contact() {
     <div className="bg-[#f8fafc] min-h-screen font-sans text-slate-900 pb-20 pt-4">
       <SEO
         title="Contact Us | Expert Support"
-        description="Connect with the Primeprintshop team for expert support, bulk orders, or authorized hardware inquiries."
+        description="Connect with the Printer Mixer team for expert support, bulk orders, or authorized hardware inquiries."
       />
 
       {/* --- Breadcrumbs Header --- */}
@@ -80,7 +80,7 @@ export default function Contact() {
                 <Mail size={28} strokeWidth={2.5} />
               </div>
               <h4 className="text-[11px] font-black text-slate-400 uppercase tracking-[0.3em] mb-4">Email Support</h4>
-              <p className="text-xl font-black text-slate-900 tracking-tight italic">info@primeprintshop.shop</p>
+              <p className="text-xl font-black text-slate-900 tracking-tight italic">info@printermixer.com</p>
               <p className="text-[12px] font-bold text-slate-400 mt-4 leading-relaxed">Expert response protocols active. Expect feedback within 24 hours.</p>
             </motion.div>
 

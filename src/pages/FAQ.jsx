@@ -8,12 +8,12 @@ const faqData = [
   {
     category: "Orders & Purchasing",
     questions: [
-      { q: "How do I place an order on Primeprintshop?", a: "Simply browse our products, add your items to the cart, and complete the checkout using your preferred payment method." },
+      { q: "How do I place an order on Printer Mixer?", a: "Simply browse our products, add your items to the cart, and complete the checkout using your preferred payment method." },
       { q: "Do I need an account to purchase?", a: "No. You can checkout as a guest. However, creating an account helps you track orders and access your purchase history." },
       { q: "How can I check my order status?", a: "Log into your account and visit My Orders to view real-time updates. You will also receive email notifications." },
       { q: "Can I modify or cancel my order after placing it?", a: "Orders can be modified or canceled before shipping. Once the item is dispatched, cancellations aren’t possible." },
       { q: "What payment methods do you accept?", a: "We accept major credit/debit cards (Visa, Mastercard), PayPal, and other secure digital payment options." },
-      { q: "Is shopping on Primeprintshop secure?", a: "Yes. All transactions are encrypted and processed through verified, PCI-compliant payment networks including PayPal Secure." }
+      { q: "Is shopping on Printer Mixer secure?", a: "Yes. All transactions are encrypted and processed through verified, PCI-compliant payment networks including PayPal Secure." }
     ]
   },
   {
@@ -198,7 +198,7 @@ export default function FAQ() {
                 {filteredData.length === 0 && (
                   <div className="py-32 text-center bg-white rounded-[40px] border-2 border-dashed border-slate-100">
                     <div className="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-8">
-                       <Search size={32} className="text-slate-200" />
+                      <Search size={32} className="text-slate-200" />
                     </div>
                     <h4 className="text-2xl font-black text-slate-900 tracking-tight">No results found</h4>
                     <p className="text-slate-400 font-medium mt-3 text-base">Try broader keywords or browse categories for assistance.</p>

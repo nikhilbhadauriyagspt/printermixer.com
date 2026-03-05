@@ -37,14 +37,14 @@ export default function About() {
         {/* --- Section 1: The Vision --- */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center bg-white p-8 md:p-16 rounded-[40px] border border-slate-100 shadow-2xl shadow-indigo-100/20 relative overflow-hidden">
           <div className="absolute top-0 left-0 w-64 h-64 bg-indigo-50 rounded-full blur-[100px] -ml-32 -mt-32 opacity-60" />
-          
+
           <div className="lg:col-span-7 space-y-10 relative z-10">
             <div className="space-y-6">
               <h2 className="text-3xl lg:text-5xl font-black text-slate-900 leading-tight tracking-tight italic">Built on trust <br /> and precision.</h2>
               <div className="w-16 h-1.5 bg-indigo-600 rounded-full" />
             </div>
             <p className="text-slate-500 text-lg md:text-xl font-medium leading-relaxed max-w-2xl">
-              Founded in 2026, Primeprintshop was established to solve a singular challenge: making the acquisition of high-performance printing infrastructure simple, transparent, and absolutely authentic. As a new generation authorized partner, we bridge the gap between complex industrial solutions and a seamless, personalized experience.
+              Founded in 2026, Printer Mixer was established to solve a singular challenge: making the acquisition of high-performance printing infrastructure simple, transparent, and absolutely authentic. As a new generation authorized partner, we bridge the gap between complex industrial solutions and a seamless, personalized experience.
             </p>
           </div>
           <div className="lg:col-span-5 relative z-10">
@@ -118,10 +118,10 @@ export default function About() {
         {/* --- Section 4: Advantage Grid --- */}
         <div className="bg-white p-10 md:p-20 rounded-[40px] border border-slate-100 shadow-2xl shadow-indigo-100/20 relative overflow-hidden mb-20">
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-indigo-50 rounded-full blur-[100px] -mr-48 -mb-48 opacity-60" />
-          
+
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-10 mb-20 relative z-10">
             <div className="space-y-4">
-              <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tighter">The Primeprintshop Advantage.</h2>
+              <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tighter">The Printer Mixer Advantage.</h2>
               <p className="text-slate-400 text-[13px] font-black uppercase tracking-[0.2em]">Certified hardware ecosystem benefits</p>
             </div>
             <Link to="/shop" className="group flex items-center gap-3 text-[11px] font-black uppercase tracking-[0.3em] text-indigo-600 hover:text-indigo-700 transition-colors">

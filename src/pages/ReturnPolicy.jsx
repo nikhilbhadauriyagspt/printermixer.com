@@ -15,12 +15,12 @@ export default function ReturnPolicy() {
 
       <h2>Return Process</h2>
       <p>
-        To return an item, please email customer service at <a href="mailto:info@primeprintshop.shop">info@primeprintshop.shop</a> to obtain an Return Merchandise Authorization (RMA) number.
+        To return an item, please email customer service at <a href="mailto:info@printermixer.com">info@printermixer.com</a> to obtain an Return Merchandise Authorization (RMA) number.
       </p>
       <div className="bg-gray-50 p-8 rounded-sm border border-[#e9e9e9] mt-6 not-prose">
         <p className="font-medium text-gray-500 mb-4 italic">After receiving an RMA number, place the item securely in its original packaging and include your proof of purchase, then mail your return to the following address:</p>
         <address className="not-italic text-black font-bold leading-relaxed capitalize ">
-          Primeprintshop LLC<br />
+          Printer Mixer LLC<br />
 
           N Rosemead Blvd, <br />
           Pasadena, CA 91107, USA<br />
@@ -46,7 +46,7 @@ export default function ReturnPolicy() {
       <p>If you have any questions concerning our return policy, please contact us at:</p>
       <div className="bg-gray-50 p-8 rounded-sm border border-[#e9e9e9] my-8 not-prose">
         <address className="not-italic text-gray-700 font-bold leading-relaxed space-y-3">
-          <p className="flex items-center gap-3 text-[#007DBA] font-extrabold ">info@primeprintshop.shop</p>
+          <p className="flex items-center gap-3 text-[#007DBA] font-extrabold ">info@printermixer.com</p>
           <p className="text-[10px] text-gray-400 font-bold capitalize tracking-[0.2em]">Contact support for immediate assistance</p>
         </address>
       </div>

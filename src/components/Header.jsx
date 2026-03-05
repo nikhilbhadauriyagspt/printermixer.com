@@ -120,7 +120,7 @@ export default function Header() {
         <Link to="/" className="flex-shrink-0 transition-transform active:scale-95">
           <img
             src="/logo/logo.png"
-            alt="Primeprintshop"
+            alt="Printer Mixer"
             className="h-10 md:h-12 object-contain"
           />
         </Link>
@@ -383,7 +383,7 @@ export default function Header() {
             <div className="flex items-center gap-3">
               <div className="text-right">
                 <p className="text-[10px] font-bold text-slate-400 uppercase leading-none">Support Mail</p>
-                <p className="text-[13px] font-black text-slate-900 mt-1 hover:text-indigo-600 transition-colors cursor-pointer">info@primeprintshop.shop</p>
+                <p className="text-[13px] font-black text-slate-900 mt-1 hover:text-indigo-600 transition-colors cursor-pointer">info@printermixer.com</p>
               </div>
               <div className="h-10 w-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center animate-pulse">
                 <Mail size={20} strokeWidth={2} />

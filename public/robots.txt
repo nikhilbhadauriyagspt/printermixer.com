@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://primeprintshop.shop/sitemap.xml
+Sitemap: https://printermixer.com/sitemap.xml
 

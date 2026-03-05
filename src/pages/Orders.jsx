@@ -98,7 +98,7 @@ export default function Orders() {
                 Procurement <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500 italic">History.</span>
               </h1>
               <div className="inline-flex items-center gap-3 px-6 py-3 rounded-2xl bg-white border border-slate-100 shadow-sm self-center md:self-auto">
-                <span className="text-slate-900 font-black">{orders.length}</span> 
+                <span className="text-slate-900 font-black">{orders.length}</span>
                 <span className="text-[11px] font-black text-slate-400 uppercase tracking-widest">Total Units Tracked</span>
               </div>
             </div>
@@ -184,8 +184,8 @@ export default function Orders() {
                     <div className="flex items-start gap-3 text-slate-400">
                       <MapPin size={16} className="text-indigo-600 shrink-0 mt-0.5" />
                       <div>
-                         <p className="text-[10px] font-black uppercase tracking-widest">Logistics link</p>
-                         <p className="text-[13px] font-bold text-slate-900 mt-1">{order.address}, {order.city}</p>
+                        <p className="text-[10px] font-black uppercase tracking-widest">Logistics link</p>
+                        <p className="text-[13px] font-bold text-slate-900 mt-1">{order.address}, {order.city}</p>
                       </div>
                     </div>
                     <button
@@ -265,7 +265,7 @@ export default function Orders() {
                   <div className="grid grid-cols-2 gap-10">
                     <div>
                       <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 flex items-center gap-2"><Truck size={12} /> System Carrier</p>
-                      <p className="text-sm font-black text-slate-900 uppercase tracking-widest">Primeprintshop Logistics</p>
+                      <p className="text-sm font-black text-slate-900 uppercase tracking-widest">Printer Mixer Logistics</p>
                     </div>
                     <div className="text-right">
                       <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 flex items-center gap-2 justify-end"><Clock size={12} /> Expected Link</p>

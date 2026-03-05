@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 export default function SEO({ title, description, keywords, schemaType = "Website" }) {
   useEffect(() => {
     // Update Title
-    const baseTitle = "Primeprintshop";
+    const baseTitle = "Printer Mixer";
     const fullTitle = title ? `${title} | ${baseTitle}` : baseTitle;
     document.title = fullTitle;
 
@@ -44,9 +44,9 @@ export default function SEO({ title, description, keywords, schemaType = "Websit
     const schemaData = {
       "@context": "https://schema.org",
       "@type": schemaType === "Product" ? "Product" : "Organization",
-      "name": "Primeprintshop",
-      "url": "https://primeprintshop.shop",
-      "logo": "https://primeprintshop.shop/logo/logo.png",
+      "name": "Printer Mixer",
+      "url": "https://printermixer.com",
+      "logo": "https://printermixer.com/logo/logo.png",
       "description": finalDesc,
       "address": {
         "@type": "PostalAddress",
@@ -59,7 +59,7 @@ export default function SEO({ title, description, keywords, schemaType = "Websit
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "customer service",
-        "email": "info@primeprintshop.shop"
+        "email": "info@printermixer.com"
       }
     };
 
