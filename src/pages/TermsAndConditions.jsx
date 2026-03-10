@@ -369,7 +369,7 @@ export default function TermsAndConditions() {
         <div className="bg-gray-50 p-8 rounded-sm border border-[#e9e9e9] my-8 not-prose">
           <address className="not-italic text-gray-700 font-bold leading-relaxed space-y-2 capitalize ">
             <p className="text-black font-extrabold">Printer Mixer LLC</p>
-            <p>HP Authorized Partner</p>
+
             <p>N Rosemead Blvd, Pasadena, CA 91107, USA</p>
             <p>United States</p>
             <p className="pt-4 text-[#007DBA] font-extrabold lowercase">Email: info@printermixer.com</p>

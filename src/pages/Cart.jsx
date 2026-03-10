@@ -161,8 +161,7 @@ export default function Cart() {
                     <ShieldCheck size={24} className="text-indigo-600" />
                   </div>
                   <p className="text-[11px] font-bold leading-relaxed uppercase tracking-wider">
-                    HP Authorized Merchant. Your purchase is protected by brand warranty protocols.
-                  </p>
+                    Your purchase is protected by brand warranty protocols.                  </p>
                 </div>
               </div>
             </div>

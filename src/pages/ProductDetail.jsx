@@ -163,8 +163,7 @@ export default function ProductDetail() {
 
                 <div className="absolute bottom-8 left-8">
                   <div className="px-5 py-2 bg-indigo-600 text-white rounded-full text-[10px] font-black uppercase tracking-[0.2em] flex items-center gap-2 shadow-xl shadow-indigo-200">
-                    <Zap size={14} className="fill-white" /> Authorized Stock
-                  </div>
+                    <Zap size={14} className="fill-white" /> Genuine Stock                  </div>
                 </div>
               </div>
 
@@ -287,8 +286,7 @@ export default function ProductDetail() {
                   {activeTab === 'specs' && (
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-16">
                       {[
-                        { label: "Manufacturer", value: product.brand_name || "Official Partner" },
-                        { label: "Model series", value: product.category_name || "Enterprise" },
+                        { label: "Manufacturer", value: product.brand_name || "Verified Retailer" },                        { label: "Model series", value: product.category_name || "Enterprise" },
                         { label: "Condition", value: "Factory New" },
                         { label: "Expert support", value: "24/7 Expert" }
                       ].map((spec, i) => (
@@ -344,8 +342,7 @@ export default function ProductDetail() {
                     <img src={getImagePath(p.images)} alt="" className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-700 mix-blend-multiply" />
                   </div>
                   <div className="space-y-3">
-                    <span className="text-[9px] font-black text-slate-400 uppercase tracking-[0.2em]">{p.brand_name || 'Partner'}</span>
-                    <h4 className="text-[13px] font-bold text-slate-800 group-hover:text-indigo-600 transition-colors leading-tight line-clamp-2 h-8">{p.name}</h4>
+                    <span className="text-[9px] font-black text-slate-400 uppercase tracking-[0.2em]">{p.brand_name || 'Merchant'}</span>                    <h4 className="text-[13px] font-bold text-slate-800 group-hover:text-indigo-600 transition-colors leading-tight line-clamp-2 h-8">{p.name}</h4>
                     <p className="text-lg font-black text-slate-900 tracking-tight pt-2 border-t border-slate-50">${parseFloat(p.price).toLocaleString()}</p>
                   </div>
                 </Link>

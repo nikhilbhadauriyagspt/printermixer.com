@@ -64,15 +64,8 @@ export default function Footer() {
                 <Link to="/" className="block transition-transform hover:scale-105 origin-left">
                   <img src="/logo/logo.png" alt="Printer Mixer" className="h-10 md:h-12 object-contain brightness-0 invert" />
                 </Link>
-                <div className="mt-4 flex items-center gap-3">
-                  <img src="/logo/primefixsolutions-logo.png" alt="Prime Fix Solutions" className="h-6 object-contain brightness-0 invert opacity-80" />
-                  <div className="w-px h-4 bg-slate-700" />
-                  <p className="text-[10px] font-black text-indigo-400 uppercase tracking-widest italic leading-tight">
-                    A subsidiary of <br /> Prime Fix Solutions
-                  </p>
-                </div>
                 <p className="text-slate-400 font-medium leading-relaxed text-[15px] max-w-sm mt-6">
-                  Authorized HP Partner delivering enterprise-grade hardware and specialized expertise to modern workspaces nationwide.
+                  Delivering enterprise-grade hardware and specialized expertise to modern workspaces nationwide.
                 </p>
               </div>
 
@@ -149,15 +142,7 @@ export default function Footer() {
                 ))}
               </ul>
 
-              <div className="pt-6">
-                <div className="p-6 bg-white/5 border border-white/5 rounded-[32px] flex items-center gap-5 group hover:bg-white/10 transition-all duration-500">
-                  <img src="/brands/hp.png" alt="HP" className="h-10 w-auto object-contain " />
-                  <div className="h-10 w-px bg-white/10"></div>
-                  <p className="text-[10px] font-black text-indigo-400 uppercase leading-tight tracking-widest">
-                    HP Authorized<br /><span className="text-white">Professional Partner</span>
-                  </p>
-                </div>
-              </div>
+
             </div>
 
           </div>

@@ -10,7 +10,7 @@ export default function About() {
     <div className="bg-[#f8fafc] min-h-screen font-sans text-slate-900 pb-20 pt-4">
       <SEO
         title="About Us | Our Mission & Partnership"
-        description="Learn about our commitment to authorized HP excellence, our journey, and the core pillars that drive our specialized hardware services."
+        description="Learn about our commitment to excellence, our journey, and the core pillars that drive our specialized hardware services."
       />
 
       {/* --- Breadcrumbs Header --- */}
@@ -27,7 +27,6 @@ export default function About() {
           </div>
           <div className="inline-flex items-center gap-3 px-6 py-3 bg-white rounded-2xl border border-slate-100 shadow-sm self-center md:self-auto">
             <ShieldCheck size={18} className="text-indigo-600" strokeWidth={2.5} />
-            <span className="text-[11px] font-black uppercase tracking-widest text-slate-400">HP Authorized Partner</span>
           </div>
         </div>
       </div>
@@ -44,7 +43,7 @@ export default function About() {
               <div className="w-16 h-1.5 bg-indigo-600 rounded-full" />
             </div>
             <p className="text-slate-500 text-lg md:text-xl font-medium leading-relaxed max-w-2xl">
-              Founded in 2026, Printer Mixer was established to solve a singular challenge: making the acquisition of high-performance printing infrastructure simple, transparent, and absolutely authentic. As a new generation authorized partner, we bridge the gap between complex industrial solutions and a seamless, personalized experience.
+              Founded in 2026, Printer Mixer was established to solve a singular challenge: making the acquisition of high-performance printing infrastructure simple, transparent, and absolutely authentic. We bridge the gap between complex industrial solutions and a seamless, personalized experience.
             </p>
           </div>
           <div className="lg:col-span-5 relative z-10">

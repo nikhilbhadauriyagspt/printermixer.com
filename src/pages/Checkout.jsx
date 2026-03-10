@@ -135,7 +135,7 @@ export default function Checkout() {
           <Package size={48} className="text-slate-200" strokeWidth={1.5} />
         </div>
         <h2 className="text-3xl font-black text-slate-900 mb-4 tracking-tight">No Hardware in Session</h2>
-        <p className="text-slate-500 font-medium text-base mb-12 max-w-md mx-auto leading-relaxed">Please add authorized items to your cart before proceeding to checkout.</p>
+        <p className="text-slate-500 font-medium text-base mb-12 max-w-md mx-auto leading-relaxed">Please add premium items to your cart before proceeding to checkout.</p>
         <Link to="/shop" className="px-12 py-5 bg-indigo-600 text-white font-black text-[11px] uppercase tracking-[0.2em] rounded-2xl hover:bg-indigo-700 transition-all shadow-xl shadow-indigo-100 active:scale-95">Return to Catalog</Link>
       </div>
     );
@@ -151,7 +151,7 @@ export default function Checkout() {
           <CheckCircle2 size={56} strokeWidth={2.5} />
         </motion.div>
         <h1 className="text-5xl md:text-6xl font-black text-slate-900 tracking-tighter mb-6 uppercase italic leading-none">Order Confirmed.</h1>
-        <p className="text-slate-500 font-medium text-lg mb-12 max-w-xl mx-auto leading-relaxed">Your authorized hardware is scheduled for immediate dispatch to your logistics destination.</p>
+        <p className="text-slate-500 font-medium text-lg mb-12 max-xl mx-auto leading-relaxed">Your hardware is scheduled for immediate dispatch to your logistics destination.</p>
         <div className="bg-white p-12 rounded-[40px] border border-slate-100 mb-12 max-w-md w-full shadow-2xl shadow-indigo-100/30 overflow-hidden relative group">
           <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-50 rounded-full blur-3xl -mr-16 -mt-16" />
           <p className="text-[11px] font-black text-indigo-600 uppercase tracking-[0.4em] mb-4 relative z-10">Order Reference</p>
@@ -206,7 +206,7 @@ export default function Checkout() {
                     <h3 className="text-[12px] font-black uppercase tracking-[0.2em] text-slate-900">Contact Information</h3>
                   </div>
                   <div className="space-y-3">
-                    <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-4">Authorized Recipient Email</label>
+                    <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-4">Recipient Email</label>
                     <input required name="email" value={formData.email} onChange={handleInputChange} type="email" placeholder="Email address for specialized order updates" className="w-full h-16 px-8 bg-slate-50 border border-slate-100 rounded-2xl focus:bg-white focus:border-indigo-600 outline-none text-sm font-bold text-slate-800 transition-all placeholder:text-slate-300" />
                   </div>
                 </div>

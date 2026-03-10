@@ -67,9 +67,9 @@ export default function Home() {
   return (
     <div className="bg-[#f8fafc] font-sans overflow-x-hidden text-slate-900">
       <SEO
-        title="Authorized HP Partner | Premium Printers, Genuine Ink & Toner"
-        description="Shop authorized HP printers, genuine ink, toner, and premium accessories at Printer Mixer. Your trusted partner for high-performance printing solutions in Pasadena, CA and nationwide."
-        keywords="HP Authorized Partner, Buy HP Printers Online, Genuine HP Ink and Toner, HP LaserJet, HP OfficeJet, Printer Accessories, Business Printing Solutions, Pasadena Store"
+        title="Premium Printers, Genuine Ink & Toner"
+        description="Shop HP printers, genuine ink, toner, and premium accessories at Printer Mixer. Your trusted partner for high-performance printing solutions in Pasadena, CA and nationwide."
+        keywords="Buy HP Printers Online, Genuine HP Ink and Toner, HP LaserJet, HP OfficeJet, Printer Accessories, Business Printing Solutions, Pasadena Store"
       />
       {/* 1. HERO */}
       <div className="relative">

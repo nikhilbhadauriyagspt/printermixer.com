@@ -143,7 +143,7 @@ export default function CookiePolicy() {
       <div className="bg-gray-50 p-8 rounded-sm border border-[#e9e9e9] my-8 not-prose">
         <address className="not-italic text-gray-700 font-bold leading-relaxed space-y-2">
           <p className="text-black font-extrabold">Printer Mixer LLC</p>
-          <p>HP Authorized Partner</p>
+
           <p>N Rosemead Blvd</p>
           <p>Pasadena, CA 91107</p>
           <p>United States</p>

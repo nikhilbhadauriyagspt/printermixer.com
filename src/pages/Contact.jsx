@@ -104,7 +104,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-[10px] font-black uppercase tracking-widest text-indigo-400">Certified Hub</p>
-                  <p className="text-[13px] font-bold text-slate-300">HP Authorized Partner</p>
+
                 </div>
               </div>
             </div>

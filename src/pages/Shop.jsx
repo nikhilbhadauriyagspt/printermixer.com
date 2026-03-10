@@ -340,8 +340,7 @@ export default function Shop() {
                     {/* Content Section */}
                     <div className="flex flex-col flex-1 min-w-0">
                       <div className="flex items-center justify-between mb-3">
-                        <span className="text-[10px] font-black uppercase tracking-[0.2em] text-indigo-600">{p.brand_name || 'Verified Partner'}</span>
-                        <div className="flex gap-1">
+                        <span className="text-[10px] font-black uppercase tracking-[0.2em] text-indigo-600">{p.brand_name || 'Verified Merchant'}</span>                        <div className="flex gap-1">
                           {[1, 2, 3].map(s => <div key={s} className="w-1 h-1 rounded-full bg-indigo-100" />)}
                         </div>
                       </div>

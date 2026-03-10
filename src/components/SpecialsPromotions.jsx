@@ -74,8 +74,7 @@ export default function SpecialsPromotions() {
               tag="New Arrival"
               title="Advanced color solutions"
               subtitle="Precision color for design professionals and studios."
-              price="Exclusive partnership"
-              link="/shop"
+              price="Exclusive offer"              link="/shop"
               height="h-[450px]"
             />
           </div>

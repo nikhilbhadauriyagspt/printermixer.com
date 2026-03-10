@@ -9,7 +9,7 @@ export default function SEO({ title, description, keywords, schemaType = "Websit
 
     // Update Description
     const metaDescription = document.querySelector('meta[name="description"]');
-    const finalDesc = description || "Authorized HP partner specializing in pro workstations, precision printing, and genuine Product accessories.";
+    const finalDesc = description || "Specializing in pro workstations, precision printing, and genuine Product accessories.";
     if (metaDescription) {
       metaDescription.setAttribute('content', finalDesc);
     }
@@ -21,7 +21,7 @@ export default function SEO({ title, description, keywords, schemaType = "Websit
       metaKeywords.name = "keywords";
       document.head.appendChild(metaKeywords);
     }
-    metaKeywords.setAttribute('content', keywords || "HP Authorized Partner, Premium Laptops, Business Printers, Expert Support");
+    metaKeywords.setAttribute('content', keywords || "Premium Laptops, Business Printers, Expert Support");
 
     // Update Canonical
     let canonical = document.querySelector('link[rel="canonical"]');

@@ -35,8 +35,7 @@ export default function CartDrawer() {
             <div className="p-8 border-b border-slate-100 flex items-center justify-between bg-slate-50/50">
               <div>
                 <h2 className="text-2xl font-black text-slate-900 tracking-tight uppercase italic">Selection.</h2>
-                <p className="text-[11px] font-black text-indigo-600 mt-1 uppercase tracking-widest">{cartCount} authorized units</p>
-              </div>
+                <p className="text-[11px] font-black text-indigo-600 mt-1 uppercase tracking-widest">{cartCount} items</p>              </div>
               <button
                 onClick={closeCartDrawer}
                 className="h-12 w-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-slate-400 hover:text-red-500 transition-all border border-slate-100"
@@ -123,8 +122,7 @@ export default function CartDrawer() {
                     <ShoppingBag size={48} className="text-slate-200" strokeWidth={1.5} />
                   </div>
                   <h3 className="text-2xl font-black text-slate-900 mb-3 tracking-tight">System cache empty.</h3>
-                  <p className="text-slate-500 font-medium max-w-[280px] mb-12 text-base leading-relaxed">Your selection doesn't contain any authorized hardware units at this time.</p>
-                  <button
+                  <p className="text-slate-500 font-medium max-w-[280px] mb-12 text-base leading-relaxed">Your selection doesn't contain any hardware items at this time.</p>                  <button
                     onClick={closeCartDrawer}
                     className="px-12 py-5 bg-indigo-600 text-white font-black text-[11px] uppercase tracking-[0.2em] rounded-2xl hover:bg-indigo-700 transition-all shadow-xl shadow-indigo-100 active:scale-95"
                   >

@@ -64,11 +64,11 @@ export default function UserLogin() {
                 <span className="text-[10px] font-black uppercase tracking-[0.3em]">Access Point</span>
               </div>
               <h2 className="text-5xl font-black text-slate-900 leading-[1.1] tracking-tight">
-                Premium <br /> Partner <span className="text-indigo-600">Portal.</span>
-              </h2>
-              <p className="text-slate-500 text-lg font-medium leading-relaxed max-w-xs">
-                Secure access to your authorized hardware configurations and order history.
-              </p>
+                Premium <br /> Client Portal <span className="text-indigo-600">Portal.</span>
+                </h2>
+                <p className="text-slate-500 font-medium text-lg leading-relaxed max-w-sm mt-4 italic">
+                Secure access to your hardware configurations and order history.
+                </p>
             </div>
           </div>
 

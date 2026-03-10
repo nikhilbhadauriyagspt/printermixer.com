@@ -23,7 +23,7 @@ export default function BrandShowcase({ brands = [] }) {
             <div className="space-y-1">
               <span className="text-[10px] font-bold text-slate-400 capitalize tracking-[0.3em] flex items-center gap-2">
                 <div className="h-1 w-1 rounded-full bg-brand"></div>
-                Official Partners
+                Top Brands
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-brand capitalize  leading-none">
                 The <span className="text-slate-400">Network.</span>

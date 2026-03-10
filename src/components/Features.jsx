@@ -9,12 +9,6 @@ import {
 
 const features = [
   {
-    icon: Award,
-    title: "Authorized Partner",
-    desc: "100% Genuine HP Inventory",
-    accent: "bg-amber-50 text-amber-600"
-  },
-  {
     icon: Truck,
     title: "Express Logistics",
     desc: "Fast Global Priority Delivery",
@@ -50,7 +44,7 @@ export default function Features() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-16">
           {features.map((item, i) => (
             <motion.div
               key={i}

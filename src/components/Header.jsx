@@ -104,7 +104,7 @@ export default function Header() {
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1.5"><Truck size={14} /> Free Express Shipping</span>
             <span className="w-px h-3 bg-indigo-400" />
-            <span className="flex items-center gap-1.5"><ShieldCheck size={14} /> Genuine HP Partner</span>
+
           </div>
 
           <div className="flex items-center gap-6">

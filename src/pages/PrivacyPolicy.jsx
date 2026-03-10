@@ -286,7 +286,7 @@ export default function PrivacyPolicy() {
       <div className="bg-gray-50 p-8 rounded-sm border border-[#e9e9e9] my-8 not-prose">
         <address className="not-italic text-gray-700 font-bold leading-relaxed">
           Printer Mixer LLC<br />
-          HP Authorized Partner<br />
+
           N Rosemead Blvd, <br />
           Pasadena, CA 91107, USA<br />
           United States

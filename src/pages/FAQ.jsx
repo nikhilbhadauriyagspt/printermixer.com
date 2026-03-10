@@ -31,7 +31,7 @@ const faqData = [
     category: "Products & Availability",
     questions: [
       { q: "Are your products genuine and covered under warranty?", a: "Yes. All products are 100% genuine and come with an official manufacturer's warranty." },
-      { q: "Do you sell only HP products or other brands too?", a: "We are an Authorized HP Partner, but we also sell laptops, printers, and accessories from other trusted brands." },
+      { q: "Do you sell only HP products or other brands too?", a: "We also sell laptops, printers, and accessories from other trusted brands." },
       { q: "How can I choose the right hardware?", a: "You can contact our expert support for personalized buying recommendations based on your usage and budget." },
       { q: "What if an item is out of stock?", a: "You can join the Back in Stock alert on the product page, and we’ll notify you as soon as it becomes available." }
     ]

@@ -118,7 +118,7 @@ export default function Hero() {
               <div className="absolute bottom-8 left-8 right-8 text-white">
                 <div className="flex items-center gap-2 mb-3">
                   <ShieldCheck size={14} className="text-indigo-400" />
-                  <span className="text-indigo-400 text-[10px] font-black uppercase tracking-widest">Certified Partner</span>
+                  <span className="text-indigo-400 text-[10px] font-black uppercase tracking-widest">Verified Merchant</span>
                 </div>
                 <h3 className="text-2xl font-extrabold leading-tight mb-4 tracking-tight">
                   Original Ink <br /> & Supplies

@@ -11,13 +11,6 @@ export default function ServiceHighlights() {
       bg: "bg-blue-50"
     },
     {
-      title: "Authorized Partner",
-      desc: "Genuine HP products guaranteed",
-      icon: ShieldCheck,
-      color: "text-indigo-600",
-      bg: "bg-indigo-50"
-    },
-    {
       title: "Service Hub",
       desc: "Expert assistance desk",
       icon: Headset,
@@ -36,7 +29,7 @@ export default function ServiceHighlights() {
   return (
     <section className="relative z-20 mt-[-40px] md:mt-[50px] font-sans">
       <div className="w-full mx-auto px-4 lg:px-16">
-        <div className="bg-white rounded-[32px] shadow-2xl shadow-indigo-100/50 border border-slate-100 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 overflow-hidden">
+        <div className="bg-white rounded-[32px] shadow-2xl shadow-indigo-100/50 border border-slate-100 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 overflow-hidden">
           {items.map((it, idx) => {
             const Icon = it.icon;
             return (

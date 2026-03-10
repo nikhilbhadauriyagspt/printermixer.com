@@ -64,8 +64,7 @@ export default function UserSignup() {
                 <span className="text-[10px] font-black uppercase tracking-[0.3em]">New Member</span>
               </div>
               <h2 className="text-5xl font-black leading-[1.1] tracking-tight text-white">
-                Begin your <br /> <span className="text-indigo-400">Authorized</span> Hub.
-              </h2>
+                Begin your <br /> <span className="text-indigo-400">Client</span> Hub.              </h2>
               <p className="text-slate-400 text-lg font-medium leading-relaxed max-w-sm">
                 Register to unlock exclusive corporate configurations and priority hardware support.
               </p>
