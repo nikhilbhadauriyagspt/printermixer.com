@@ -114,6 +114,16 @@ export default function Shop() {
     <div className="bg-[#f8fafc] min-h-screen font-sans text-slate-900">
       <SEO title="Shop Authorized Printers | Printer Mixer" />
 
+      {category === 'all-in-one-printers' && (
+        <div className="w-full">
+          <img
+            src="/banner/shopbaner.jpg"
+            alt="Shop Banner"
+            className="w-full h-[900px] object-cover block"
+          />
+        </div>
+      )}
+
       {/* --- Page Header --- */}
       <div className="bg-white border-b border-slate-100">
         <div className="w-full mx-auto px-6 lg:px-16 py-10 md:py-14">

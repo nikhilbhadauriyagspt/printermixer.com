@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, useParams } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 import Header from './components/Header';
@@ -38,15 +38,23 @@ import NewsletterManager from './pages/admin/NewsletterManager';
 import UserManager from './pages/admin/UserManager';
 
 // Layout wrapper for customer-facing pages
-const ShopLayout = ({ children }) => (
-  <div className="bg-[#f8fafc] min-h-screen flex flex-col">
-    <Header />
-    <main className="flex-grow pt-[72px] md:pt-[120px] lg:pt-[172px]">
-      {children}
-    </main>
-    <Footer />
-  </div>
-);
+const ShopLayout = ({ children }) => {
+  const location = useLocation();
+  const { category: pathCategory } = useParams();
+  const searchParams = new URLSearchParams(location.search);
+  const category = searchParams.get('category') || pathCategory;
+  const isSpecialCategory = category === 'all-in-one-printers';
+
+  return (
+    <div className="bg-[#f8fafc] min-h-screen flex flex-col">
+      {!isSpecialCategory && <Header />}
+      <main className={`flex-grow ${isSpecialCategory ? 'pt-0' : 'pt-[72px] md:pt-[120px] lg:pt-[172px]'}`}>
+        {children}
+      </main>
+      <Footer />
+    </div>
+  );
+};
 
 function App() {
   const paypalOptions = {
