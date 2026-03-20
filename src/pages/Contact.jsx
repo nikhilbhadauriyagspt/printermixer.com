@@ -96,18 +96,7 @@ export default function Contact() {
               <p className="text-[12px] font-bold text-slate-400 mt-4 leading-relaxed">N Rosemead Blvd, Pasadena, CA 91107, USA</p>
             </motion.div>
 
-            <div className="p-8 bg-slate-900 rounded-[32px] text-white relative overflow-hidden group shadow-2xl">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-600 rounded-full blur-[60px] opacity-20 group-hover:opacity-40 transition-opacity" />
-              <div className="relative z-10 flex items-center gap-5">
-                <div className="h-12 w-12 bg-white/10 rounded-2xl flex items-center justify-center">
-                  <ShieldCheck size={24} className="text-indigo-400" />
-                </div>
-                <div>
-                  <p className="text-[10px] font-black uppercase tracking-widest text-indigo-400">Certified Hub</p>
 
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Contact Form Stage */}

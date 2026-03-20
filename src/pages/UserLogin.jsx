@@ -57,7 +57,7 @@ export default function UserLogin() {
               <ChevronLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
               <span className="text-[11px] font-black uppercase tracking-widest">Back to Store</span>
             </Link>
-            
+
             <div className="space-y-6">
               <div className="flex items-center gap-3 text-indigo-600">
                 <Sparkles size={24} />
@@ -65,10 +65,10 @@ export default function UserLogin() {
               </div>
               <h2 className="text-5xl font-black text-slate-900 leading-[1.1] tracking-tight">
                 Premium <br /> Client Portal <span className="text-indigo-600">Portal.</span>
-                </h2>
-                <p className="text-slate-500 font-medium text-lg leading-relaxed max-w-sm mt-4 italic">
+              </h2>
+              <p className="text-slate-500 font-medium text-lg leading-relaxed max-w-sm mt-4 italic">
                 Secure access to your hardware configurations and order history.
-                </p>
+              </p>
             </div>
           </div>
 
@@ -79,7 +79,7 @@ export default function UserLogin() {
               </div>
               <div>
                 <p className="text-[11px] font-black text-slate-900 uppercase tracking-widest">End-to-End Secure</p>
-                <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest">Certified SSL Encryption</p>
+                <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest"> SSL Encryption</p>
               </div>
             </div>
           </div>

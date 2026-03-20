@@ -314,25 +314,7 @@ export default function Shop() {
                 </div>
               </div>
 
-              {/* Brand Filter */}
-              <div className="space-y-6">
-                <div className="flex items-center gap-3">
-                  <div className="w-1.5 h-5 bg-amber-400 rounded-full" />
-                  <h3 className="text-[12px] font-black text-slate-900 uppercase tracking-[0.2em]">Manufacturers</h3>
-                </div>
-                <div className="grid grid-cols-1 gap-2 max-h-80 overflow-y-auto custom-scrollbar pr-2">
-                  {brands.map(b => (
-                    <button
-                      key={b.id}
-                      onClick={() => updateFilter('brand', brand === b.name ? '' : b.name)}
-                      className={`flex items-center justify-between px-5 py-3 rounded-2xl text-[13px] font-bold transition-all border ${brand === b.name ? 'border-indigo-600 bg-indigo-50 text-indigo-600' : 'border-slate-100 bg-white text-slate-500 hover:border-indigo-200 hover:text-indigo-600'}`}
-                    >
-                      <span>{b.name}</span>
-                      {brand === b.name && <CheckCircle2 size={14} strokeWidth={3} />}
-                    </button>
-                  ))}
-                </div>
-              </div>
+
 
               {/* Support CTA */}
               <div className="p-8 bg-slate-900 rounded-[32px] text-white relative overflow-hidden group">

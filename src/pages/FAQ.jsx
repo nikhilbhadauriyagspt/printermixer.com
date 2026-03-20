@@ -64,7 +64,7 @@ export default function FAQ() {
     <div className="bg-[#f8fafc] min-h-screen font-sans text-slate-900 pb-20 pt-4">
       <SEO
         title="Knowledge Base | Support FAQ"
-        description="Find detailed answers to common questions about orders, authorized hardware, shipping, and certified HP support."
+        description="Find detailed answers to common questions about orders, authorized hardware, shipping, and support."
       />
 
       {/* --- Breadcrumbs Header --- */}
@@ -129,7 +129,7 @@ export default function FAQ() {
                   <span className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-400">Expert Help</span>
                 </div>
                 <h4 className="text-2xl font-black leading-tight tracking-tight italic">Need Personal Assistance?</h4>
-                <p className="text-slate-400 text-sm font-medium leading-relaxed">Our certified specialists are ready to help with your complex expert inquiries.</p>
+                <p className="text-slate-400 text-sm font-medium leading-relaxed">Our specialists are ready to help with your complex expert inquiries.</p>
                 <Link to="/contact" className="inline-flex items-center gap-3 bg-indigo-600 text-white px-8 py-4 rounded-2xl text-[11px] font-black uppercase tracking-widest hover:bg-indigo-700 transition-all shadow-xl shadow-indigo-900/40">
                   Contact Support <ArrowRight size={16} />
                 </Link>

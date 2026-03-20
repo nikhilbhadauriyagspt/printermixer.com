@@ -95,11 +95,18 @@ export default function Footer() {
             <div className="lg:col-span-2 space-y-8">
               <h4 className="text-[11px] font-black text-white uppercase tracking-[0.3em]">Company</h4>
               <ul className="space-y-4">
-                {['Home', 'About', 'Shop', 'FAQ', 'Contact Us', 'My Orders'].map((item) => (
-                  <li key={item}>
-                    <Link to={`/${item.toLowerCase().replace(' ', '-')}`} className="text-[14px] font-bold text-slate-500 hover:text-indigo-400 transition-colors flex items-center gap-2 group">
+                {[
+                  { name: 'Home', path: '/' },
+                  { name: 'About Us', path: '/about' },
+                  { name: 'Shop', path: '/shop' },
+                  { name: 'FAQ', path: '/faq' },
+                  { name: 'Contact Us', path: '/contact' },
+                  { name: 'My Orders', path: '/orders' }
+                ].map((item) => (
+                  <li key={item.name}>
+                    <Link to={item.path} className="text-[14px] font-bold text-slate-500 hover:text-indigo-400 transition-colors flex items-center gap-2 group">
                       <div className="w-1 h-1 bg-slate-700 rounded-full group-hover:bg-indigo-400 transition-all" />
-                      {item}
+                      {item.name}
                     </Link>
                   </li>
                 ))}
@@ -132,11 +139,16 @@ export default function Footer() {
             <div className="lg:col-span-3 space-y-8">
               <h4 className="text-[11px] font-black text-white uppercase tracking-[0.3em]">Transparency</h4>
               <ul className="space-y-4">
-                {['Privacy Policy', 'Terms & Conditions', 'Return Policy', 'Shipping Policy'].map((item) => (
-                  <li key={item}>
-                    <Link to={`/${item.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`} className="text-[14px] font-bold text-slate-500 hover:text-indigo-400 transition-colors flex items-center gap-2 group">
+                {[
+                  { name: 'Privacy Policy', path: '/privacy-policy' },
+                  { name: 'Terms & Conditions', path: '/terms-and-conditions' },
+                  { name: 'Return Policy', path: '/return-policy' },
+                  { name: 'Shipping Policy', path: '/shipping-policy' }
+                ].map((item) => (
+                  <li key={item.name}>
+                    <Link to={item.path} className="text-[14px] font-bold text-slate-500 hover:text-indigo-400 transition-colors flex items-center gap-2 group">
                       <div className="w-1 h-1 bg-slate-700 rounded-full group-hover:bg-indigo-400 transition-all" />
-                      {item}
+                      {item.name}
                     </Link>
                   </li>
                 ))}
@@ -155,7 +167,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="space-y-4 text-center md:text-left">
               <div className="text-[11px] font-bold uppercase tracking-widest text-slate-500">
-                © 2026 Printer Mixer.
+                © 2026 Printer Mixer. All hardware properties of their respective owners.
               </div>
               <div className="text-[18px] font-medium text-slate-500 max-w-2xl leading-relaxed">
                 Disclaimer - For Informational only. No software installation or distribution.

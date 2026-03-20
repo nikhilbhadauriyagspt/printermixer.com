@@ -310,7 +310,7 @@ export default function Checkout() {
                             <div className="relative z-10">
                               <p className="text-[10px] font-black uppercase tracking-[0.4em] mb-6 text-slate-400 flex items-center justify-center gap-2"><Lock size={12} /> Secured with SSL Encryption Protocols.</p>
                               <div className="inline-flex items-center gap-3 px-8 py-3 bg-white/10 rounded-full text-[11px] font-black uppercase tracking-widest border border-white/10 shadow-sm">
-                                <ShieldCheck size={20} className="text-indigo-400" /> Certified Hub Checkout
+                                <ShieldCheck size={20} className="text-indigo-400" />Checkout
                               </div>
                             </div>
                           </div>

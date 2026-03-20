@@ -9,7 +9,7 @@ export default function About() {
   return (
     <div className="bg-[#f8fafc] min-h-screen font-sans text-slate-900 pb-20 pt-4">
       <SEO
-        title="About Us | Our Mission & Partnership"
+        title="About Us | Our Mission"
         description="Learn about our commitment to excellence, our journey, and the core pillars that drive our specialized hardware services."
       />
 
@@ -93,7 +93,7 @@ export default function About() {
               </div>
               <h3 className="text-4xl md:text-5xl font-black leading-[1.1] tracking-tighter italic">The customer <br /> standard.</h3>
               <p className="text-slate-400 text-lg font-medium leading-relaxed max-w-md">
-                To empower professionals with reliable, efficient, and sustainable hardware solutions through original products and certified advice. We believe in hardware that works as hard as you do.
+                To empower professionals with reliable, efficient, and sustainable hardware solutions through original products and advice. We believe in hardware that works as hard as you do.
               </p>
             </div>
           </div>
@@ -120,7 +120,7 @@ export default function About() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-10 mb-20 relative z-10">
             <div className="space-y-4">
               <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tighter">The Printer Mixer Advantage.</h2>
-              <p className="text-slate-400 text-[13px] font-black uppercase tracking-[0.2em]">Certified hardware ecosystem benefits</p>
+              <p className="text-slate-400 text-[13px] font-black uppercase tracking-[0.2em]">hardware ecosystem benefits</p>
             </div>
             <Link to="/shop" className="group flex items-center gap-3 text-[11px] font-black uppercase tracking-[0.3em] text-indigo-600 hover:text-indigo-700 transition-colors">
               Explore Inventory <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
@@ -129,20 +129,16 @@ export default function About() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-12 relative z-10">
             {[
-              { title: "Authorized Status", icon: ShieldCheck, color: "text-indigo-600", bg: "bg-indigo-50" },
-              { title: "Genuine Supplies", icon: Package, color: "text-blue-600", bg: "bg-blue-50" },
               { title: "Hardware Service", icon: Zap, color: "text-amber-500", bg: "bg-amber-50" },
               { title: "Safe Logistics", icon: Globe, color: "text-emerald-600", bg: "bg-emerald-50" },
-              { title: "Original Hardware", icon: CheckCircle2, color: "text-indigo-600", bg: "bg-indigo-50" },
               { title: "Service Center", icon: Headphones, color: "text-blue-600", bg: "bg-blue-50" },
               { title: "Sustainable Solutions", icon: Leaf, color: "text-emerald-600", bg: "bg-emerald-50" },
-              { title: "Professional Hub", icon: Wrench, color: "text-slate-600", bg: "bg-slate-50" }
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-5 group">
                 <div className={`h-14 w-14 rounded-2xl ${item.bg} ${item.color} flex items-center justify-center shrink-0 group-hover:scale-110 transition-all duration-500 shadow-sm`}>
                   <item.icon size={22} strokeWidth={2.5} />
                 </div>
-                <h4 className="text-[13px] font-black text-slate-800 uppercase tracking-tight group-hover:text-indigo-600 transition-colors">{item.title}</h4>
+                <h4 className="text-[13px] font-black text-slate-800 capitalize group-hover:text-indigo-600 transition-colors">{item.title}</h4>
               </div>
             ))}
           </div>

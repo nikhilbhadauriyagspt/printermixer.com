@@ -203,7 +203,7 @@ export default function ProductDetail() {
 
                 <div className="flex items-end gap-8 pt-4">
                   <div className="space-y-1">
-                    <p className="text-[11px] font-black uppercase tracking-[0.2em] text-slate-400">Certified price</p>
+                    <p className="text-[11px] font-black uppercase tracking-[0.2em] text-slate-400"> price</p>
                     <p className="text-5xl font-black text-slate-900 tracking-tighter">${parseFloat(product.price).toLocaleString()}</p>
                   </div>
                   {product.sale_price && (
@@ -250,7 +250,7 @@ export default function ProductDetail() {
                     </div>
                     <div>
                       <p className="text-[13px] font-black text-slate-900 uppercase tracking-tight">Rapid delivery</p>
-                      <p className="text-[11px] font-bold text-slate-400 uppercase tracking-widest">Certified logistics</p>
+                      <p className="text-[11px] font-bold text-slate-400 uppercase tracking-widest"> logistics</p>
                     </div>
                   </div>
                   <div className="p-6 bg-slate-50/50 border border-slate-100 rounded-3xl flex items-center gap-5 group hover:bg-white hover:border-indigo-100 transition-all duration-500">
@@ -286,7 +286,7 @@ export default function ProductDetail() {
                   {activeTab === 'specs' && (
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-16">
                       {[
-                        { label: "Manufacturer", value: product.brand_name || "Verified Retailer" },                        { label: "Model series", value: product.category_name || "Enterprise" },
+                        { label: "Manufacturer", value: product.brand_name || "Verified Retailer" }, { label: "Model series", value: product.category_name || "Enterprise" },
                         { label: "Condition", value: "Factory New" },
                         { label: "Expert support", value: "24/7 Expert" }
                       ].map((spec, i) => (
@@ -302,7 +302,7 @@ export default function ProductDetail() {
                       <div className="absolute top-0 right-0 w-40 h-40 bg-indigo-600 rounded-full blur-[80px] opacity-20 group-hover:opacity-40 transition-opacity" />
                       <div className="relative z-10">
                         <h4 className="text-xl font-black mb-4 tracking-tight italic">Expert configuration help.</h4>
-                        <p className="text-slate-400 text-sm font-medium mb-8 leading-relaxed max-w-sm">Our certified engineering team is available to assist with setup and workflow optimization for your new hardware.</p>
+                        <p className="text-slate-400 text-sm font-medium mb-8 leading-relaxed max-w-sm">Our engineering team is available to assist with setup and workflow optimization for your new hardware.</p>
                         <Link to="/contact" className="inline-flex items-center gap-3 text-[11px] font-black uppercase tracking-widest bg-indigo-600 text-white px-8 py-4 rounded-2xl hover:bg-indigo-700 transition-all shadow-xl shadow-indigo-900/40">
                           Connect with Support <ExternalLink size={16} />
                         </Link>
@@ -351,6 +351,6 @@ export default function ProductDetail() {
           </div>
         )}
       </div>
-    </div>
+    </div >
   );
 }
