@@ -67,7 +67,7 @@ export default function Home() {
   return (
     <div className="bg-[#f8fafc] font-sans overflow-x-hidden text-slate-900">
       <SEO
-        title="Premium Printers, Ink & Toner"
+        title="Printer Mixer | Printers, Ink & Toner"
         description="Shop printers, ink, toner, and premium accessories at Printer Mixer. for high-performance printing solutions in Pasadena, CA and nationwide."
         keywords="Buy Printers Online, Ink and Toner, LaserJet, OfficeJet, Printer Accessories, Business Printing Solutions, Pasadena Store"
       />
