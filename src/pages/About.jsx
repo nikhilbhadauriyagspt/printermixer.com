@@ -22,7 +22,7 @@ export default function About() {
               <span className="text-[11px] font-black uppercase tracking-[0.2em]">Our Story</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-black text-slate-900 leading-none tracking-tighter">
-              Authorized <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500 italic">Excellence.</span>
+              About <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500 italic">Us.</span>
             </h1>
           </div>
           <div className="inline-flex items-center gap-3 px-6 py-3 bg-white rounded-2xl border border-slate-100 shadow-sm self-center md:self-auto">
@@ -107,7 +107,7 @@ export default function About() {
               </div>
               <h2 className="text-4xl md:text-5xl font-black leading-[1.1] tracking-tighter italic">Nationwide <br /> reach.</h2>
               <p className="text-slate-500 text-lg font-medium leading-relaxed max-w-md">
-                Expanding across the United States to deliver professional HP hardware with unmatched logistics and long-term service value. Our network ensures you are never without expert support.
+                Expanding across the United States to deliver professional hardware with unmatched logistics and long-term service value. Our network ensures you are never without expert support.
               </p>
             </div>
           </div>

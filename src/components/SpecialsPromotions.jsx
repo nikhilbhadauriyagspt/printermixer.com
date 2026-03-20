@@ -32,7 +32,7 @@ export default function SpecialsPromotions() {
           <div className="lg:col-span-2">
             <PromoCard
               image={IMG.left}
-              tag="Bestseller"
+
               title="Enterprise LaserJet Pro"
               subtitle="The gold standard for high-volume office printing."
               price="Starting at $299"
@@ -45,7 +45,7 @@ export default function SpecialsPromotions() {
           <div className="lg:col-span-1">
             <PromoCard
               image={IMG.topRight}
-              tag="Save $50"
+
               title="Smart Tank Series"
               subtitle="Ultra-low cost per page."
               link="/shop?category=supertank-printers"
@@ -58,7 +58,7 @@ export default function SpecialsPromotions() {
           <div className="lg:col-span-1">
             <PromoCard
               image={IMG.bottomLeft}
-              tag="Certified"
+
               title="Original supplies"
               subtitle="Keep your prints brilliant."
               link="/shop?category=printer-accessories"
@@ -71,7 +71,7 @@ export default function SpecialsPromotions() {
           <div className="lg:col-span-2">
             <PromoCard
               image={IMG.bottomRight}
-              tag="New Arrival"
+
               title="Advanced color solutions"
               subtitle="Precision color for design professionals and studios."
               price="Exclusive offer" link="/shop"
@@ -111,9 +111,7 @@ function PromoCard({ image, tag, title, subtitle, price, link, height = "h-full"
       {/* Content */}
       <div className="relative z-10 h-full p-10 flex flex-col justify-end">
         <div className="space-y-4">
-          <span className="inline-block px-4 py-1.5 bg-indigo-600/90 backdrop-blur-md text-white text-[11px] font-bold rounded-full shadow-lg">
-            {tag}
-          </span>
+
 
           <h3 className="text-3xl md:text-4xl font-extrabold text-white leading-tight tracking-tight">
             {title}
