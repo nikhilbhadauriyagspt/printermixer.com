@@ -62,10 +62,9 @@ export default function About() {
             <div className="w-16 h-1.5 bg-slate-100 rounded-full mx-auto" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
             {[
               { icon: Printer, title: "Hardware Deployment", desc: "Expert selection of LaserJet, All-in-One, and high-volume industrial systems tailored for your specialized business needs." },
-              { icon: Package, title: "Supply Chain Excellence", desc: "Authorized source for 100% genuine HP ink, toner, and certified replacement parts with rapid nationwide logistics." },
               { icon: Headphones, title: "Specialist Support", desc: "Factory-trained specialists providing troubleshooting, installation guidance, and long-term hardware maintenance protocols." }
             ].map((item, i) => (
               <motion.div

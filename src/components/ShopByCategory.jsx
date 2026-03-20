@@ -45,7 +45,7 @@ export default function ShopByCategoryGrid({ categories = [] }) {
             >
               {/* Background Decor */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-50/50 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-indigo-100/50 transition-colors" />
-              
+
               {/* Image Section */}
               <Link
                 to={`/shop?category=${cat.slug}`}
@@ -60,17 +60,12 @@ export default function ShopByCategoryGrid({ categories = [] }) {
 
               {/* Text Section */}
               <div className="relative z-10 flex flex-col flex-1">
-                <div className="flex items-center gap-2 text-indigo-600 mb-3">
-                   <div className="p-2 bg-indigo-50 rounded-lg">
-                      {getIcon(cat.slug)}
-                   </div>
-                   <span className="text-[10px] font-black uppercase tracking-widest opacity-60">Verified Series</span>
-                </div>
-                
+
+
                 <h3 className="text-xl font-black text-slate-900 leading-tight mb-4 group-hover:text-indigo-600 transition-colors">
                   {cat.name}
                 </h3>
-                
+
                 <div className="mt-auto">
                   <Link
                     to={`/shop?category=${cat.slug}`}
