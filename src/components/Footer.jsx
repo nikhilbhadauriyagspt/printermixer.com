@@ -153,14 +153,17 @@ export default function Footer() {
       <div className="py-10 bg-slate-950/50">
         <div className="w-full mx-auto px-6 lg:px-16">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-            <div className="text-[11px] font-bold uppercase tracking-widest text-slate-500">
-              © 2026 Printer Mixer. All hardware properties of their respective owners.
+            <div className="space-y-4 text-center md:text-left">
+              <div className="text-[11px] font-bold uppercase tracking-widest text-slate-500">
+                © 2026 Printer Mixer. All hardware properties of their respective owners.
+              </div>
+              <div className="text-[18px] font-medium text-slate-500 max-w-2xl leading-relaxed">
+                Disclaimer - For Informational only. No software installation or distribution.
+              </div>
             </div>
 
             <div className="flex flex-wrap justify-center items-center gap-8 text-[10px] font-black tracking-widest uppercase">
-              <div className="flex items-center gap-2 text-indigo-500">
-                <ShieldCheck size={16} /> Verified merchant
-              </div>
+
               <div className="flex items-center gap-6 opacity-30 hover:opacity-100 transition-opacity grayscale invert">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" className="h-4 w-auto" />
                 <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" className="h-5 w-auto" />

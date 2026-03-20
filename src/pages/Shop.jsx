@@ -179,7 +179,7 @@ export default function Shop() {
           {/* Text Overlay with Slider */}
           <div className="absolute inset-0 flex items-center justify-end px-6 md:pr-32 lg:pr-64">
             <AnimatePresence mode="wait">
-              <motion.div 
+              <motion.div
                 key={currentSlide}
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -252,10 +252,7 @@ export default function Shop() {
                 Precision engineering meets modern performance. Discover <span className="text-indigo-600 font-bold">{total}</span> premium solutions.
               </p>
             </div>
-            <div className="inline-flex items-center gap-3 px-5 py-2.5 bg-indigo-50 text-indigo-600 rounded-2xl border border-indigo-100 shadow-sm self-start md:self-auto">
-              <ShieldCheck size={18} strokeWidth={2.5} />
-              <span className="text-[11px] font-black uppercase tracking-widest">Authorized Inventory</span>
-            </div>
+
           </div>
         </div>
       </div>
@@ -453,11 +450,7 @@ export default function Shop() {
 
                     {/* Content Section */}
                     <div className="flex flex-col flex-1 min-w-0">
-                      <div className="flex items-center justify-between mb-3">
-                        <span className="text-[10px] font-black uppercase tracking-[0.2em] text-indigo-600">{p.brand_name || 'Verified Merchant'}</span>                        <div className="flex gap-1">
-                          {[1, 2, 3].map(s => <div key={s} className="w-1 h-1 rounded-full bg-indigo-100" />)}
-                        </div>
-                      </div>
+
 
                       <Link to={`/product/${p.slug}`} className="block mb-4">
                         <h3 className={`font-bold text-slate-800 group-hover:text-indigo-600 transition-colors leading-tight line-clamp-2 ${viewMode === 'list' ? 'text-2xl' : 'text-[15px] h-10'}`}>

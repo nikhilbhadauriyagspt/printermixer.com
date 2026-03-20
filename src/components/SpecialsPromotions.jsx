@@ -18,7 +18,7 @@ export default function SpecialsPromotions() {
             <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
               Exclusive <span className="text-indigo-600">deals.</span>
             </h2>
-            <p className="text-slate-400 font-bold text-sm uppercase tracking-widest">Premium Hardware • Certified Supplies • Elite Support</p>
+            <p className="text-slate-400 font-bold text-sm uppercase tracking-widest">Premium Hardware • Elite Support</p>
           </div>
           <Link to="/shop" className="px-8 py-4 bg-white border border-slate-200 rounded-2xl font-bold text-[13px] hover:bg-indigo-600 hover:text-white hover:border-indigo-600 transition-all shadow-sm">
             View full inventory
@@ -27,7 +27,7 @@ export default function SpecialsPromotions() {
 
         {/* BENTO GRID LAYOUT */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          
+
           {/* 1. LARGE WIDE CARD (TOP LEFT) */}
           <div className="lg:col-span-2">
             <PromoCard
@@ -74,7 +74,7 @@ export default function SpecialsPromotions() {
               tag="New Arrival"
               title="Advanced color solutions"
               subtitle="Precision color for design professionals and studios."
-              price="Exclusive offer"              link="/shop"
+              price="Exclusive offer" link="/shop"
               height="h-[450px]"
             />
           </div>
@@ -92,7 +92,7 @@ function PromoCard({ image, tag, title, subtitle, price, link, height = "h-full"
       : "bg-gradient-to-r from-slate-950/80 via-slate-950/20 to-transparent";
 
   return (
-    <motion.div 
+    <motion.div
       whileHover={{ y: -8 }}
       className={`relative overflow-hidden rounded-[40px] group shadow-2xl shadow-indigo-100/30 border border-white ${height}`}
     >
@@ -114,11 +114,11 @@ function PromoCard({ image, tag, title, subtitle, price, link, height = "h-full"
           <span className="inline-block px-4 py-1.5 bg-indigo-600/90 backdrop-blur-md text-white text-[11px] font-bold rounded-full shadow-lg">
             {tag}
           </span>
-          
+
           <h3 className="text-3xl md:text-4xl font-extrabold text-white leading-tight tracking-tight">
             {title}
           </h3>
-          
+
           <p className="text-slate-300 text-sm md:text-base font-medium max-w-xs leading-relaxed">
             {subtitle}
           </p>

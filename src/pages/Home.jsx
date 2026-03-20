@@ -81,8 +81,7 @@ export default function Home() {
       <div className="py-10 md:py-20">
         <ShopByCategory categories={data.categories} />
       </div>
-      <BrandMarquee />
-      {/* 3. FEATURED PRODUCTS (TABS) - Moved here after Category */}
+
       <FeaturedTabs
         printers={data.printers}
         accessories={data.accessories}
