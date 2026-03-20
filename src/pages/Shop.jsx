@@ -165,7 +165,7 @@ export default function Shop() {
 
   return (
     <div className="bg-[#f8fafc] min-h-screen font-sans text-slate-900">
-      <SEO title="Shop Authorized Printers | Printer Mixer" />
+      <SEO title="Shop Printers | Printer Mixer" />
 
       {category === 'all-in-one-printers' && (
         <div className="relative w-full overflow-hidden bg-[#fef9c3]">

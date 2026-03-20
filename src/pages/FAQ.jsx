@@ -64,7 +64,7 @@ export default function FAQ() {
     <div className="bg-[#f8fafc] min-h-screen font-sans text-slate-900 pb-20 pt-4">
       <SEO
         title="Knowledge Base | Support FAQ"
-        description="Find detailed answers to common questions about orders, authorized hardware, shipping, and support."
+        description="Find detailed answers to common questions about orders, hardware, shipping, and support."
       />
 
       {/* --- Breadcrumbs Header --- */}

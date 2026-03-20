@@ -45,7 +45,7 @@ export default function Contact() {
     <div className="bg-[#f8fafc] min-h-screen font-sans text-slate-900 pb-20 pt-4">
       <SEO
         title="Contact Us | Expert Support"
-        description="Connect with the Printer Mixer team for expert support, bulk orders, or authorized hardware inquiries."
+        description="Connect with the Printer Mixer team for expert support, bulk orders, or hardware inquiries."
       />
 
       {/* --- Breadcrumbs Header --- */}

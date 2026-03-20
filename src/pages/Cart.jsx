@@ -16,7 +16,7 @@ export default function Cart() {
           <ShoppingCart size={48} className="text-slate-200" strokeWidth={1.5} />
         </div>
         <h2 className="text-3xl font-black text-slate-900 mb-4 tracking-tight">Your Cart Is Empty</h2>
-        <p className="text-slate-500 font-medium text-base mb-12 max-w-md leading-relaxed">You haven't added any authorized hardware to your selection yet.</p>
+        <p className="text-slate-500 font-medium text-base mb-12 max-w-md leading-relaxed">You haven't added any hardware to your selection yet.</p>
         <Link to="/shop" className="px-12 py-5 bg-indigo-600 text-white font-black text-[11px] uppercase tracking-[0.2em] rounded-2xl hover:bg-indigo-700 transition-all shadow-xl shadow-indigo-100 active:scale-95">
           Start Shopping
         </Link>
@@ -26,7 +26,7 @@ export default function Cart() {
 
   return (
     <div className="min-h-screen bg-[#f8fafc] font-sans text-slate-900 pb-20 pt-4">
-      
+
       {/* --- Breadcrumbs --- */}
       <div className="w-full mx-auto px-6 lg:px-16 py-8 mb-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 text-center md:text-left">
@@ -40,7 +40,7 @@ export default function Cart() {
             </h1>
           </div>
           <div className="inline-flex items-center gap-4 px-6 py-3 bg-white rounded-2xl border border-slate-100 shadow-sm self-center md:self-auto">
-            <span className="text-slate-900 font-black">{cartCount}</span> 
+            <span className="text-slate-900 font-black">{cartCount}</span>
             <span className="text-[11px] font-black uppercase tracking-widest text-slate-400">Items In Selection</span>
           </div>
         </div>
@@ -77,7 +77,7 @@ export default function Cart() {
                         <h3 className="text-2xl font-bold text-slate-800 hover:text-indigo-600 transition-colors leading-tight line-clamp-2">{item.name}</h3>
                       </Link>
                     </div>
-                    
+
                     <div className="flex flex-wrap items-center justify-between gap-8 border-t border-slate-50 pt-8">
                       <div className="flex items-center gap-12">
                         <div className="h-14 px-5 bg-slate-50 rounded-2xl border border-slate-100 flex items-center gap-8">
@@ -90,7 +90,7 @@ export default function Cart() {
                           <span className="text-2xl font-black text-slate-900 tracking-tight italic">${item.price.toLocaleString()}</span>
                         </div>
                       </div>
-                      
+
                       <div className="flex items-center gap-10">
                         <div className="space-y-1 text-right">
                           <span className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] block">Total</span>
@@ -113,7 +113,7 @@ export default function Cart() {
 
             <Link to="/shop" className="group inline-flex items-center gap-3 text-[11px] font-black text-slate-400 hover:text-indigo-600 transition-all pt-12 uppercase tracking-[0.25em]">
               <div className="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center group-hover:border-indigo-600 transition-all">
-                <ChevronLeft size={16} className="group-hover:-translate-x-1 transition-transform" /> 
+                <ChevronLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
               </div>
               Continue Shopping
             </Link>
@@ -124,11 +124,11 @@ export default function Cart() {
             <div className="bg-white rounded-[40px] p-10 lg:p-14 text-slate-900 border border-slate-100 shadow-2xl shadow-indigo-100/30 sticky top-32">
               <div className="flex items-center gap-5 mb-12 pb-10 border-b border-slate-50">
                 <div className="w-14 h-14 bg-indigo-50 text-indigo-600 rounded-[20px] flex items-center justify-center shadow-sm">
-                   <Package size={26} strokeWidth={2.5} />
+                  <Package size={26} strokeWidth={2.5} />
                 </div>
                 <div>
-                   <h3 className="text-sm font-black uppercase tracking-[0.2em]">Order Summary</h3>
-                   <p className="text-[11px] text-slate-400 font-bold uppercase mt-1 tracking-wider">Authorized Transaction</p>
+                  <h3 className="text-sm font-black uppercase tracking-[0.2em]">Order Summary</h3>
+                  <p className="text-[11px] text-slate-400 font-bold uppercase mt-1 tracking-wider">Transaction</p>
                 </div>
               </div>
 
