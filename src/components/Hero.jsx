@@ -26,7 +26,7 @@ const slides = [
   },
   {
     image: banner2,
-    tag: "Genuine Ink & Toner",
+    tag: "Ink & Toner",
     title: "Reliable Supplies That Deliver",
     subtitle:
       "Keep your printer running smoothly with quality ink cartridges and toner refills. Enjoy sharp text, vibrant colors, and consistent results for everyday printing needs.",

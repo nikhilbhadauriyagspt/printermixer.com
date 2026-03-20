@@ -162,8 +162,7 @@ export default function ProductDetail() {
                 </button>
 
                 <div className="absolute bottom-8 left-8">
-                  <div className="px-5 py-2 bg-indigo-600 text-white rounded-full text-[10px] font-black uppercase tracking-[0.2em] flex items-center gap-2 shadow-xl shadow-indigo-200">
-                    <Zap size={14} className="fill-white" /> Genuine Stock                  </div>
+
                 </div>
               </div>
 
