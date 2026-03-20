@@ -167,7 +167,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="space-y-4 text-center md:text-left">
               <div className="text-[11px] font-bold uppercase tracking-widest text-slate-500">
-                © 2026 Printer Mixer. All hardware properties of their respective owners.
+                © 2026 Printer Mixer.
               </div>
               <div className="text-[18px] font-medium text-slate-500 max-w-2xl leading-relaxed">
                 Disclaimer - For Informational only. No software installation or distribution.
