@@ -68,23 +68,23 @@ const SpotlightBlock = ({ title, icon: Icon, data, colIndex, loading = false }) 
     <div className={`bg-white p-8 rounded-[32px] border border-slate-100 shadow-xl shadow-indigo-100/20 flex flex-col h-full`}>
       <div className="flex items-center justify-between mb-8">
         <div className="flex items-center gap-3">
-           <div className="p-2.5 bg-indigo-50 text-indigo-600 rounded-xl">
-              <Icon size={20} strokeWidth={2.5} />
-           </div>
-           <h3 className="text-xl font-black text-slate-900 tracking-tight">{title}</h3>
+          <div className="p-2.5 bg-indigo-50 text-[#0978CD] rounded-xl">
+            <Icon size={20} strokeWidth={2.5} />
+          </div>
+          <h3 className="text-xl font-black text-slate-900 tracking-tight">{title}</h3>
         </div>
         <div className="flex items-center gap-1.5">
           <button
             onClick={goPrev}
             disabled={page === 0}
-            className="h-8 w-8 bg-slate-50 text-slate-400 rounded-lg flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed hover:bg-indigo-600 hover:text-white transition-all group"
+            className="h-8 w-8 bg-slate-50 text-slate-400 rounded-lg flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[#0978CD] hover:text-white transition-all group"
           >
             <ChevronLeft size={16} />
           </button>
           <button
             onClick={goNext}
             disabled={page === maxPage}
-            className="h-8 w-8 bg-slate-50 text-slate-400 rounded-lg flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed hover:bg-indigo-600 hover:text-white transition-all group"
+            className="h-8 w-8 bg-slate-50 text-slate-400 rounded-lg flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[#0978CD] hover:text-white transition-all group"
           >
             <ChevronRight size={16} />
           </button>
@@ -124,24 +124,24 @@ const SpotlightBlock = ({ title, icon: Icon, data, colIndex, loading = false }) 
                     />
                   </div>
                   <div className="min-w-0 flex-1">
-                    <span className="text-indigo-600 font-black text-sm mb-1 block">
+                    <span className="text-[#0978CD] font-black text-sm mb-1 block">
                       ${Number(p?.price || 0).toLocaleString()}
                     </span>
-                    <h4 className="text-[13px] font-bold text-slate-800 line-clamp-1 group-hover:text-indigo-600 transition-colors">
+                    <h4 className="text-[13px] font-bold text-slate-800 line-clamp-1 group-hover:text-[#0978CD] transition-colors">
                       {p.name}
                     </h4>
-                    
+
                     <div className="mt-2 flex items-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity">
-                       <button 
-                         onClick={(e) => { e.stopPropagation(); addToCart(p); }}
-                         className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-indigo-600 transition-colors"
-                       >
-                         Add to Cart
-                       </button>
-                       <span className="w-1 h-1 bg-slate-200 rounded-full" />
-                       <button className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-indigo-600 transition-colors">
-                         View Details
-                       </button>
+                      <button
+                        onClick={(e) => { e.stopPropagation(); addToCart(p); }}
+                        className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-[#0978CD] transition-colors"
+                      >
+                        Add to Cart
+                      </button>
+                      <span className="w-1 h-1 bg-slate-200 rounded-full" />
+                      <button className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-[#0978CD] transition-colors">
+                        View Details
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -172,26 +172,26 @@ export default function TripleSpotlightSection({
     <section className="font-sans py-20 bg-[#f8fafc]">
       <div className="w-full mx-auto px-4 lg:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <SpotlightBlock 
-            title="New Arrivals" 
-            icon={Sparkles} 
-            data={normalizeList(newArrivals)} 
-            colIndex={0} 
-            loading={loading} 
+          <SpotlightBlock
+            title="New Arrivals"
+            icon={Sparkles}
+            data={normalizeList(newArrivals)}
+            colIndex={0}
+            loading={loading}
           />
-          <SpotlightBlock 
-            title="Top Rated" 
-            icon={Star} 
-            data={normalizeList(topRated)} 
-            colIndex={1} 
-            loading={loading} 
+          <SpotlightBlock
+            title="Top Rated"
+            icon={Star}
+            data={normalizeList(topRated)}
+            colIndex={1}
+            loading={loading}
           />
-          <SpotlightBlock 
-            title="Most Popular" 
-            icon={TrendingUp} 
-            data={normalizeList(popular)} 
-            colIndex={2} 
-            loading={loading} 
+          <SpotlightBlock
+            title="Most Popular"
+            icon={TrendingUp}
+            data={normalizeList(popular)}
+            colIndex={2}
+            loading={loading}
           />
         </div>
       </div>

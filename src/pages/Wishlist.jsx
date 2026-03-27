@@ -23,7 +23,7 @@ export default function Wishlist() {
         </div>
         <h2 className="text-3xl font-black text-slate-900 mb-4 tracking-tight uppercase">Your Wishlist Is Empty</h2>
         <p className="text-slate-500 font-medium text-base mb-12 max-w-md leading-relaxed">Save your favorite hardware units here for future acquisition.</p>
-        <Link to="/shop" className="px-12 py-5 bg-indigo-600 text-white font-black text-[11px] uppercase tracking-[0.2em] rounded-2xl hover:bg-indigo-700 transition-all shadow-xl shadow-indigo-100 active:scale-95">
+        <Link to="/shop" className="px-12 py-5 bg-[#0978CD] text-white font-black text-[11px] uppercase tracking-[0.2em] rounded-2xl hover:bg-indigo-700 transition-all shadow-xl shadow-indigo-100 active:scale-95">
           Explore Catalog
         </Link>
       </div>
@@ -32,21 +32,21 @@ export default function Wishlist() {
 
   return (
     <div className="min-h-screen bg-[#f8fafc] font-sans text-slate-900 pb-20 pt-4">
-      
+
       {/* --- Breadcrumbs Header --- */}
       <div className="w-full mx-auto px-6 lg:px-16 py-10 md:py-14 mb-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 text-center md:text-left">
           <div className="space-y-4">
-            <div className="flex items-center justify-center md:justify-start gap-2 text-indigo-600">
-              <div className="w-1.5 h-5 bg-indigo-600 rounded-full" />
+            <div className="flex items-center justify-center md:justify-start gap-2 text-[#0978CD]">
+              <div className="w-1.5 h-5 bg-[#0978CD] rounded-full" />
               <span className="text-[11px] font-black uppercase tracking-[0.2em]">Saved Hardware</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-black text-slate-900 leading-none tracking-tighter">
-              Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500 italic">Favorites List.</span>
+              Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0978CD] to-blue-500 italic">Favorites List.</span>
             </h1>
           </div>
           <div className="inline-flex items-center gap-4 px-6 py-3 bg-white rounded-2xl border border-slate-100 shadow-sm self-center md:self-auto">
-            <span className="text-slate-900 font-black">{wishlistCount}</span> 
+            <span className="text-slate-900 font-black">{wishlistCount}</span>
             <span className="text-[11px] font-black uppercase tracking-widest text-slate-400">Reserved Units</span>
           </div>
         </div>
@@ -84,7 +84,7 @@ export default function Wishlist() {
                   <div className="absolute inset-x-4 bottom-4 translate-y-full group-hover:translate-y-0 transition-all duration-500 opacity-0 group-hover:opacity-100">
                     <button
                       onClick={() => addToCart(p)}
-                      className="w-full h-14 bg-indigo-600 text-white rounded-[20px] flex items-center justify-center gap-3 text-[11px] font-black uppercase tracking-[0.2em] shadow-xl shadow-indigo-200 hover:bg-indigo-700"
+                      className="w-full h-14 bg-[#0978CD] text-white rounded-[20px] flex items-center justify-center gap-3 text-[11px] font-black uppercase tracking-[0.2em] shadow-xl shadow-indigo-200 hover:bg-indigo-700"
                     >
                       <ShoppingCart size={18} strokeWidth={2.5} /> Add to Cart
                     </button>
@@ -93,11 +93,11 @@ export default function Wishlist() {
 
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
-                    <span className="text-[10px] font-black text-indigo-600 uppercase tracking-[0.2em]">{p.brand_name || 'Verified'}</span>
+                    <span className="text-[10px] font-black text-[#0978CD] uppercase tracking-[0.2em]">{p.brand_name || 'Verified'}</span>
                     <div className="h-2 w-2 rounded-full bg-emerald-500" />
                   </div>
                   <Link to={`/product/${p.slug}`}>
-                    <h3 className="text-[15px] font-bold text-slate-800 group-hover:text-indigo-600 transition-colors leading-tight line-clamp-2 h-10">{p.name}</h3>
+                    <h3 className="text-[15px] font-bold text-slate-800 group-hover:text-[#0978CD] transition-colors leading-tight line-clamp-2 h-10">{p.name}</h3>
                   </Link>
                   <p className="text-2xl font-black text-slate-900 tracking-tight pt-4 border-t border-slate-50 italic">${parseFloat(p.price).toLocaleString()}</p>
                 </div>
@@ -107,9 +107,9 @@ export default function Wishlist() {
         </div>
 
         <div className="mt-20 pt-12 border-t border-slate-100">
-          <Link to="/shop" className="group inline-flex items-center gap-3 text-[11px] font-black text-slate-400 hover:text-indigo-600 transition-all uppercase tracking-[0.25em]">
-            <div className="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center group-hover:border-indigo-600 transition-all">
-              <ChevronLeft size={16} className="group-hover:-translate-x-1 transition-transform" /> 
+          <Link to="/shop" className="group inline-flex items-center gap-3 text-[11px] font-black text-slate-400 hover:text-[#0978CD] transition-all uppercase tracking-[0.25em]">
+            <div className="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center group-hover:border-[#0978CD] transition-all">
+              <ChevronLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
             </div>
             Back to store inventory
           </Link>

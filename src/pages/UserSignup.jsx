@@ -57,7 +57,7 @@ export default function UserSignup() {
               <ChevronLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
               <span className="text-[11px] font-black uppercase tracking-widest">Back to Store</span>
             </Link>
-            
+
             <div className="space-y-6">
               <div className="flex items-center gap-3 text-indigo-400">
                 <Sparkles size={24} />
@@ -106,7 +106,7 @@ export default function UserSignup() {
               <div className="space-y-3">
                 <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-4">Full Name</label>
                 <div className="relative group">
-                  <User className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-300 group-focus-within:text-indigo-600 transition-colors" size={18} />
+                  <User className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-300 group-focus-within:text-[#0978CD] transition-colors" size={18} />
                   <input
                     required
                     type="text"
@@ -121,7 +121,7 @@ export default function UserSignup() {
               <div className="space-y-3">
                 <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-4">Mobile Contact</label>
                 <div className="relative group">
-                  <Phone className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-300 group-focus-within:text-indigo-600 transition-colors" size={18} />
+                  <Phone className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-300 group-focus-within:text-[#0978CD] transition-colors" size={18} />
                   <input
                     required
                     type="tel"
@@ -137,7 +137,7 @@ export default function UserSignup() {
             <div className="space-y-3">
               <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-4">Email Address</label>
               <div className="relative group">
-                <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-300 group-focus-within:text-indigo-600 transition-colors" size={18} />
+                <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-300 group-focus-within:text-[#0978CD] transition-colors" size={18} />
                 <input
                   required
                   type="email"
@@ -152,7 +152,7 @@ export default function UserSignup() {
             <div className="space-y-3">
               <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-4">Security Phrase</label>
               <div className="relative group">
-                <Lock className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-300 group-focus-within:text-indigo-600 transition-colors" size={18} />
+                <Lock className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-300 group-focus-within:text-[#0978CD] transition-colors" size={18} />
                 <input
                   required
                   type={showPassword ? "text" : "password"}
@@ -174,7 +174,7 @@ export default function UserSignup() {
             <div className="pt-4">
               <button
                 disabled={loading}
-                className="w-full h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center gap-3 text-xs font-black uppercase tracking-[0.2em] hover:bg-indigo-600 transition-all shadow-xl shadow-slate-200 active:scale-95 disabled:opacity-70"
+                className="w-full h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center gap-3 text-xs font-black uppercase tracking-[0.2em] hover:bg-[#0978CD] transition-all shadow-xl shadow-slate-200 active:scale-95 disabled:opacity-70"
               >
                 {loading ? <Loader2 className="animate-spin" size={20} strokeWidth={3} /> : <>Create Account <ArrowRight size={18} /></>}
               </button>
@@ -184,7 +184,7 @@ export default function UserSignup() {
           <div className="mt-10 pt-8 border-t border-slate-100 text-center">
             <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400">
               Already verified?{' '}
-              <Link to="/login" className="text-indigo-600 font-black hover:underline ml-1 uppercase">Sign In</Link>
+              <Link to="/login" className="text-[#0978CD] font-black hover:underline ml-1 uppercase">Sign In</Link>
             </p>
           </div>
         </div>

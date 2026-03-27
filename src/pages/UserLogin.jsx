@@ -53,18 +53,18 @@ export default function UserLogin() {
         {/* Left Side: Professional Message */}
         <div className="hidden lg:flex flex-col justify-between p-16 bg-slate-50 relative overflow-hidden border-r border-slate-100">
           <div className="relative z-10">
-            <Link to="/" className="inline-flex items-center gap-2 text-slate-400 hover:text-indigo-600 transition-all mb-16 group">
+            <Link to="/" className="inline-flex items-center gap-2 text-slate-400 hover:text-[#0978CD] transition-all mb-16 group">
               <ChevronLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
               <span className="text-[11px] font-black uppercase tracking-widest">Back to Store</span>
             </Link>
 
             <div className="space-y-6">
-              <div className="flex items-center gap-3 text-indigo-600">
+              <div className="flex items-center gap-3 text-[#0978CD]">
                 <Sparkles size={24} />
                 <span className="text-[10px] font-black uppercase tracking-[0.3em]">Access Point</span>
               </div>
               <h2 className="text-5xl font-black text-slate-900 leading-[1.1] tracking-tight">
-                Premium <br /> Client Portal <span className="text-indigo-600">Portal.</span>
+                Premium <br /> Client Portal <span className="text-[#0978CD]">Portal.</span>
               </h2>
               <p className="text-slate-500 font-medium text-lg leading-relaxed max-w-sm mt-4 italic">
                 Secure access to your hardware configurations and order history.
@@ -74,7 +74,7 @@ export default function UserLogin() {
 
           <div className="relative z-10">
             <div className="p-6 bg-white rounded-[2rem] border border-slate-100 flex items-center gap-4 shadow-sm">
-              <div className="h-12 w-12 rounded-2xl bg-indigo-50 flex items-center justify-center text-indigo-600">
+              <div className="h-12 w-12 rounded-2xl bg-indigo-50 flex items-center justify-center text-[#0978CD]">
                 <ShieldCheck size={24} strokeWidth={2.5} />
               </div>
               <div>
@@ -107,7 +107,7 @@ export default function UserLogin() {
               <div className="space-y-3">
                 <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-4">Email Address</label>
                 <div className="relative group">
-                  <Mail className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-300 group-focus-within:text-indigo-600 transition-colors" size={18} />
+                  <Mail className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-300 group-focus-within:text-[#0978CD] transition-colors" size={18} />
                   <input
                     required
                     type="email"
@@ -122,10 +122,10 @@ export default function UserLogin() {
               <div className="space-y-3">
                 <div className="flex justify-between items-center px-4">
                   <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Security Phrase</label>
-                  <Link to="#" className="text-[10px] font-black text-indigo-600 hover:underline uppercase tracking-widest">Forgot?</Link>
+                  <Link to="#" className="text-[10px] font-black text-[#0978CD] hover:underline uppercase tracking-widest">Forgot?</Link>
                 </div>
                 <div className="relative group">
-                  <Lock className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-300 group-focus-within:text-indigo-600 transition-colors" size={18} />
+                  <Lock className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-300 group-focus-within:text-[#0978CD] transition-colors" size={18} />
                   <input
                     required
                     type={showPassword ? "text" : "password"}
@@ -137,7 +137,7 @@ export default function UserLogin() {
                   <button
                     type="button"
                     onClick={() => setShowPassword(!showPassword)}
-                    className="absolute right-5 top-1/2 -translate-y-1/2 text-slate-300 hover:text-indigo-600 transition-colors"
+                    className="absolute right-5 top-1/2 -translate-y-1/2 text-slate-300 hover:text-[#0978CD] transition-colors"
                   >
                     {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
                   </button>
@@ -147,7 +147,7 @@ export default function UserLogin() {
 
             <button
               disabled={loading}
-              className="w-full h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center gap-3 text-xs font-black uppercase tracking-widest hover:bg-indigo-600 transition-all shadow-xl shadow-slate-200 active:scale-95 disabled:opacity-70"
+              className="w-full h-16 bg-slate-900 text-white rounded-2xl flex items-center justify-center gap-3 text-xs font-black uppercase tracking-widest hover:bg-[#0978CD] transition-all shadow-xl shadow-slate-200 active:scale-95 disabled:opacity-70"
             >
               {loading ? <Loader2 className="animate-spin" size={20} strokeWidth={3} /> : <>Authenticate <ArrowRight size={18} /></>}
             </button>
@@ -156,7 +156,7 @@ export default function UserLogin() {
           <div className="mt-12 pt-8 border-t border-slate-100 text-center">
             <p className="text-[11px] font-bold text-slate-400 uppercase tracking-widest">
               Need a professional account?{' '}
-              <Link to="/signup" className="text-indigo-600 font-black hover:underline ml-1 uppercase">Create Access</Link>
+              <Link to="/signup" className="text-[#0978CD] font-black hover:underline ml-1 uppercase">Create Access</Link>
             </p>
           </div>
         </div>

@@ -99,7 +99,7 @@ export default function Header() {
         }`}
     >
       {/* 1. TOP ANNOUNCEMENT BAR (Sleek & Minimal) */}
-      <div className="bg-indigo-600 py-2 hidden md:block">
+      <div className="bg-[#0978CD] py-2 hidden md:block">
         <div className="w-full mx-auto px-16 flex justify-between items-center text-[11px] font-bold text-white uppercase tracking-[0.1em]">
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1.5"><Truck size={14} /> Free Express Shipping</span>
@@ -135,7 +135,7 @@ export default function Header() {
               placeholder="Search for premium printers, ink tanks, toners..."
               className="w-full bg-slate-50 border-2 border-slate-100 rounded-xl px-12 py-3.5 text-sm font-semibold text-slate-800 cursor-text group-hover:bg-white group-hover:border-indigo-200 group-hover:shadow-lg group-hover:shadow-indigo-50 transition-all outline-none"
             />
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-hover:text-indigo-600 transition-colors" size={20} />
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-hover:text-[#0978CD] transition-colors" size={20} />
             <div className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center gap-2">
               <span className="hidden lg:block text-[10px] font-bold text-slate-400 border border-slate-200 px-1.5 py-0.5 rounded bg-white">Ctrl + K</span>
             </div>
@@ -149,10 +149,10 @@ export default function Header() {
               to={user ? '/profile' : '/login'}
               className="flex flex-col items-center p-1.5 cursor-pointer"
             >
-              <div className="p-2.5 bg-slate-50 rounded-xl group-hover:bg-indigo-50 group-hover:text-indigo-600 transition-all">
+              <div className="p-2.5 bg-slate-50 rounded-xl group-hover:bg-indigo-50 group-hover:text-[#0978CD] transition-all">
                 <User size={22} strokeWidth={1.5} />
               </div>
-              <span className="text-[10px] font-bold text-slate-500 mt-1 uppercase group-hover:text-indigo-600 transition-colors">Account</span>
+              <span className="text-[10px] font-bold text-slate-500 mt-1 uppercase group-hover:text-[#0978CD] transition-colors">Account</span>
             </Link>
 
             {/* Account Dropdown on Hover */}
@@ -164,13 +164,13 @@ export default function Header() {
                 </div>
                 <Link
                   to="/profile"
-                  className="block px-4 py-2.5 text-[13px] font-bold text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-xl transition-all"
+                  className="block px-4 py-2.5 text-[13px] font-bold text-slate-600 hover:bg-indigo-50 hover:text-[#0978CD] rounded-xl transition-all"
                 >
                   My Profile
                 </Link>
                 <Link
                   to="/orders"
-                  className="block px-4 py-2.5 text-[13px] font-bold text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-xl transition-all"
+                  className="block px-4 py-2.5 text-[13px] font-bold text-slate-600 hover:bg-indigo-50 hover:text-[#0978CD] rounded-xl transition-all"
                 >
                   Orders History
                 </Link>
@@ -189,28 +189,28 @@ export default function Header() {
             to="/wishlist"
             className="flex flex-col items-center group p-1.5 relative"
           >
-            <div className="p-2.5 bg-slate-50 rounded-xl group-hover:bg-indigo-50 group-hover:text-indigo-600 transition-all">
+            <div className="p-2.5 bg-slate-50 rounded-xl group-hover:bg-indigo-50 group-hover:text-[#0978CD] transition-all">
               <Heart size={22} strokeWidth={1.5} />
             </div>
             {wishlistCount > 0 && (
-              <span className="absolute top-1 right-1 h-5 w-5 bg-indigo-600 text-white text-[10px] font-black rounded-full flex items-center justify-center border-2 border-white">
+              <span className="absolute top-1 right-1 h-5 w-5 bg-[#0978CD] text-white text-[10px] font-black rounded-full flex items-center justify-center border-2 border-white">
                 {wishlistCount}
               </span>
             )}
-            <span className="text-[10px] font-bold text-slate-500 mt-1 uppercase group-hover:text-indigo-600 transition-colors">Saved</span>
+            <span className="text-[10px] font-bold text-slate-500 mt-1 uppercase group-hover:text-[#0978CD] transition-colors">Saved</span>
           </Link>
 
           <button
             onClick={openCartDrawer}
             className="flex flex-col items-center group p-1.5 relative"
           >
-            <div className="p-2.5 bg-indigo-600 text-white rounded-xl group-hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-100">
+            <div className="p-2.5 bg-[#0978CD] text-white rounded-xl group-hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-100">
               <ShoppingCart size={22} strokeWidth={1.5} />
             </div>
-            <span className="absolute top-1 right-1 h-5 w-5 bg-white text-indigo-600 text-[10px] font-black rounded-full flex items-center justify-center border-2 border-indigo-600">
+            <span className="absolute top-1 right-1 h-5 w-5 bg-white text-[#0978CD] text-[10px] font-black rounded-full flex items-center justify-center border-2 border-[#0978CD]">
               {cartCount}
             </span>
-            <span className="text-[10px] font-bold text-slate-500 mt-1 uppercase group-hover:text-indigo-600 transition-colors">Cart</span>
+            <span className="text-[10px] font-bold text-slate-500 mt-1 uppercase group-hover:text-[#0978CD] transition-colors">Cart</span>
           </button>
 
           <button
@@ -236,7 +236,7 @@ export default function Header() {
             >
               <button
                 ref={catBtnRef}
-                className={`flex items-center gap-3 px-6 py-4 bg-white border-x border-slate-100 font-black text-[13px] uppercase tracking-wider transition-all ${isCategoryOpen ? 'text-indigo-600 bg-indigo-50/50' : 'text-slate-800'}`}
+                className={`flex items-center gap-3 px-6 py-4 bg-white border-x border-slate-100 font-black text-[13px] uppercase tracking-wider transition-all ${isCategoryOpen ? 'text-[#0978CD] bg-indigo-50/50' : 'text-slate-800'}`}
               >
                 <div className="flex flex-col gap-1 w-4">
                   <span className={`h-0.5 w-full bg-current transition-all ${isCategoryOpen ? 'w-full' : 'w-full'}`} />
@@ -263,7 +263,7 @@ export default function Header() {
                             onClick={() => setIsCategoryOpen(false)}
                             className="flex items-center justify-between px-4 py-2.5 rounded-xl hover:bg-indigo-50 group/cat transition-all"
                           >
-                            <span className="text-[14px] font-black text-slate-800 group-hover/cat:text-indigo-600 uppercase tracking-tight">{cat.name}</span>
+                            <span className="text-[14px] font-black text-slate-800 group-hover/cat:text-[#0978CD] uppercase tracking-tight">{cat.name}</span>
                             <ChevronRight size={14} className="text-slate-300 group-hover/cat:translate-x-1 transition-all" />
                           </Link>
 
@@ -275,7 +275,7 @@ export default function Header() {
                                   key={child.id}
                                   to={`/shop?category=${child.slug}`}
                                   onClick={() => setIsCategoryOpen(false)}
-                                  className="block px-4 py-1.5 text-[13px] font-bold text-slate-500 hover:text-indigo-600 hover:bg-indigo-50/30 rounded-lg transition-all"
+                                  className="block px-4 py-1.5 text-[13px] font-bold text-slate-500 hover:text-[#0978CD] hover:bg-indigo-50/30 rounded-lg transition-all"
                                 >
                                   {child.name}
                                 </Link>
@@ -296,7 +296,7 @@ export default function Header() {
                 <div key={link.name} className="relative group py-4">
                   <Link
                     to={link.path}
-                    className={`text-[13px] font-bold uppercase tracking-widest transition-all flex items-center gap-1.5 ${location.pathname === link.path ? 'text-indigo-600' : 'text-slate-600 hover:text-indigo-600'}`}
+                    className={`text-[13px] font-bold uppercase tracking-widest transition-all flex items-center gap-1.5 ${location.pathname === link.path ? 'text-[#0978CD]' : 'text-slate-600 hover:text-[#0978CD]'}`}
                   >
                     {link.name}
                     {link.hasSubmenu && <ChevronDown size={14} className="group-hover:rotate-180 transition-transform" />}
@@ -307,13 +307,13 @@ export default function Header() {
                     <div className="absolute top-full left-1/2 -translate-x-1/2 w-[850px] bg-white shadow-2xl rounded-2xl border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all py-10 px-10 z-[200] grid grid-cols-3 gap-12">
                       {/* Categories Column */}
                       <div className="space-y-6 max-h-[450px] overflow-y-auto pr-4 custom-scrollbar">
-                        <h4 className="text-[11px] font-black text-indigo-600 uppercase tracking-[0.2em] mb-4">Hardware Catalog</h4>
+                        <h4 className="text-[11px] font-black text-[#0978CD] uppercase tracking-[0.2em] mb-4">Hardware Catalog</h4>
                         <div className="flex flex-col gap-6">
                           {categories.filter(cat => cat.name.toLowerCase().includes('printer')).map(cat => (
                             <div key={cat.id} className="space-y-2.5">
                               <Link
                                 to={`/shop?category=${cat.slug}`}
-                                className="text-[14px] font-black text-slate-900 hover:text-indigo-600 transition-all flex items-center gap-2"
+                                className="text-[14px] font-black text-slate-900 hover:text-[#0978CD] transition-all flex items-center gap-2"
                               >
                                 {cat.name}
                               </Link>
@@ -325,7 +325,7 @@ export default function Header() {
                                     <Link
                                       key={child.id}
                                       to={`/shop?category=${child.slug}`}
-                                      className="text-[13px] font-bold text-slate-500 hover:text-indigo-600 transition-all"
+                                      className="text-[13px] font-bold text-slate-500 hover:text-[#0978CD] transition-all"
                                     >
                                       {child.name}
                                     </Link>
@@ -341,7 +341,7 @@ export default function Header() {
                       <div className="col-span-2 bg-slate-50/50 rounded-3xl p-8 flex flex-col justify-center border border-slate-100 overflow-hidden">
                         <div className="flex items-center justify-between mb-6">
                           <h4 className="text-[11px] font-black text-slate-400 uppercase tracking-[0.2em]">Featured Arrivals</h4>
-                          <Link to="/shop" className="text-[11px] font-bold text-indigo-600 hover:underline tracking-wider">Explore Full Catalog →</Link>
+                          <Link to="/shop" className="text-[11px] font-bold text-[#0978CD] hover:underline tracking-wider">Explore Full Catalog →</Link>
                         </div>
 
                         <Swiper
@@ -362,8 +362,8 @@ export default function Header() {
                                   <img src={p.images ? (typeof p.images === 'string' ? JSON.parse(p.images)[0] : p.images[0]) : ''} alt="" className="max-w-full max-h-full object-contain" />
                                 </div>
                                 <div className="min-w-0">
-                                  <p className="text-[13px] font-bold text-slate-800 line-clamp-2 group-hover/prod:text-indigo-600 transition-colors leading-tight h-8">{p.name}</p>
-                                  <p className="text-[15px] font-black text-indigo-600 mt-2">${p.price}</p>
+                                  <p className="text-[13px] font-bold text-slate-800 line-clamp-2 group-hover/prod:text-[#0978CD] transition-colors leading-tight h-8">{p.name}</p>
+                                  <p className="text-[15px] font-black text-[#0978CD] mt-2">${p.price}</p>
                                 </div>
                               </Link>
                             </SwiperSlide>
@@ -383,9 +383,9 @@ export default function Header() {
             <div className="flex items-center gap-3">
               <div className="text-right">
                 <p className="text-[10px] font-bold text-slate-400 uppercase leading-none">Support Mail</p>
-                <p className="text-[13px] font-black text-slate-900 mt-1 hover:text-indigo-600 transition-colors cursor-pointer">info@printermixer.com</p>
+                <p className="text-[13px] font-black text-slate-900 mt-1 hover:text-[#0978CD] transition-colors cursor-pointer">info@printermixer.com</p>
               </div>
-              <div className="h-10 w-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center animate-pulse">
+              <div className="h-10 w-10 bg-indigo-50 text-[#0978CD] rounded-full flex items-center justify-center animate-pulse">
                 <Mail size={20} strokeWidth={2} />
               </div>
             </div>
@@ -443,7 +443,7 @@ export default function Header() {
                       key={link.name}
                       to={link.path}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className="block text-2xl font-black text-slate-800 hover:text-indigo-600 transition-colors"
+                      className="block text-2xl font-black text-slate-800 hover:text-[#0978CD] transition-colors"
                     >
                       {link.name}
                     </Link>
@@ -460,10 +460,10 @@ export default function Header() {
                         key={cat.id}
                         to={`/shop?category=${cat.slug}`}
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className="text-[16px] font-bold text-slate-700 hover:text-indigo-600 flex items-center justify-between group"
+                        className="text-[16px] font-bold text-slate-700 hover:text-[#0978CD] flex items-center justify-between group"
                       >
                         {cat.name}
-                        <ChevronDown size={18} className="-rotate-90 text-slate-300 group-hover:text-indigo-600" />
+                        <ChevronDown size={18} className="-rotate-90 text-slate-300 group-hover:text-[#0978CD]" />
                       </Link>
                     ))}
                   </div>
@@ -482,7 +482,7 @@ export default function Header() {
                   <Link
                     to="/login"
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="block w-full py-4.5 bg-indigo-600 text-white text-center font-bold rounded-2xl shadow-xl shadow-indigo-100 hover:bg-indigo-700 transition-all"
+                    className="block w-full py-4.5 bg-[#0978CD] text-white text-center font-bold rounded-2xl shadow-xl shadow-indigo-100 hover:bg-indigo-700 transition-all"
                   >
                     Sign In to Account
                   </Link>

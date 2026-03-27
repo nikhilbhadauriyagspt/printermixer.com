@@ -123,13 +123,13 @@ export default function Shop() {
       <div className="bg-white border-b border-slate-100">
         <div className="w-full mx-auto px-6 lg:px-16 py-10 md:py-14">
           <nav className="flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.2em] text-slate-400 mb-6">
-            <Link to="/" className="hover:text-indigo-600 transition-colors">Home</Link>
+            <Link to="/" className="hover:text-[#0978CD] transition-colors">Home</Link>
             <ChevronRight size={14} className="text-slate-300" />
-            <Link to="/shop" className="hover:text-indigo-600 transition-colors">Catalog</Link>
+            <Link to="/shop" className="hover:text-[#0978CD] transition-colors">Catalog</Link>
             {category && (
               <>
                 <ChevronRight size={14} className="text-slate-300" />
-                <span className="text-indigo-600">{category.replace('-', ' ')}</span>
+                <span className="text-[#0978CD]">{category.replace('-', ' ')}</span>
               </>
             )}
           </nav>
@@ -140,7 +140,7 @@ export default function Shop() {
                 {category ? category.replace('-', ' ') : brand || 'Store Catalog'}
               </h1>
               <p className="text-slate-500 font-medium text-base max-w-2xl">
-                Precision engineering meets modern performance. Discover <span className="text-indigo-600 font-bold">{total}</span> premium solutions.
+                Precision engineering meets modern performance. Discover <span className="text-[#0978CD] font-bold">{total}</span> premium solutions.
               </p>
             </div>
 
@@ -158,14 +158,14 @@ export default function Shop() {
               {/* Category Filter */}
               <div className="space-y-6">
                 <div className="flex items-center gap-3">
-                  <div className="w-1.5 h-5 bg-indigo-600 rounded-full" />
+                  <div className="w-1.5 h-5 bg-[#0978CD] rounded-full" />
                   <h3 className="text-[12px] font-black text-slate-900 uppercase tracking-[0.2em]">Hardware Type</h3>
                 </div>
 
                 <div className="space-y-1.5">
                   <button
                     onClick={() => updateFilter('category', '')}
-                    className={`w-full text-left px-5 py-3 rounded-2xl text-[13px] font-bold transition-all ${!category ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-100' : 'text-slate-500 hover:bg-white hover:text-indigo-600 border border-transparent hover:border-indigo-50'}`}
+                    className={`w-full text-left px-5 py-3 rounded-2xl text-[13px] font-bold transition-all ${!category ? 'bg-[#0978CD] text-white shadow-lg shadow-indigo-100' : 'text-slate-500 hover:bg-white hover:text-[#0978CD] border border-transparent hover:border-indigo-50'}`}
                   >
                     All Collections
                   </button>
@@ -175,12 +175,12 @@ export default function Shop() {
                         <div className={`flex items-center justify-between group rounded-2xl transition-all ${category === cat.slug ? 'bg-indigo-50 border border-indigo-100' : 'hover:bg-white border border-transparent hover:border-slate-100'}`}>
                           <button
                             onClick={() => updateFilter('category', cat.slug)}
-                            className={`flex-1 text-left px-5 py-3 text-[13px] font-bold transition-colors ${category === cat.slug ? 'text-indigo-600' : 'text-slate-500 group-hover:text-indigo-600'}`}
+                            className={`flex-1 text-left px-5 py-3 text-[13px] font-bold transition-colors ${category === cat.slug ? 'text-[#0978CD]' : 'text-slate-500 group-hover:text-[#0978CD]'}`}
                           >
                             {cat.name}
                           </button>
                           {cat.children && cat.children.length > 0 && (
-                            <button onClick={() => toggleCategory(cat.id)} className="p-3 text-slate-300 hover:text-indigo-600">
+                            <button onClick={() => toggleCategory(cat.id)} className="p-3 text-slate-300 hover:text-[#0978CD]">
                               {expandedCategories[cat.id] ? <Minus size={14} strokeWidth={3} /> : <Plus size={14} strokeWidth={3} />}
                             </button>
                           )}
@@ -192,7 +192,7 @@ export default function Shop() {
                               <button
                                 key={child.id}
                                 onClick={() => updateFilter('category', child.slug)}
-                                className={`text-left py-2 text-[12.5px] font-semibold transition-colors ${category === child.slug ? 'text-indigo-600' : 'text-slate-400 hover:text-indigo-600'}`}
+                                className={`text-left py-2 text-[12.5px] font-semibold transition-colors ${category === child.slug ? 'text-[#0978CD]' : 'text-slate-400 hover:text-[#0978CD]'}`}
                               >
                                 {child.name}
                               </button>
@@ -209,11 +209,11 @@ export default function Shop() {
 
               {/* Support CTA */}
               <div className="p-8 bg-slate-900 rounded-[32px] text-white relative overflow-hidden group">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-600 rounded-full blur-[60px] opacity-20 group-hover:opacity-40 transition-opacity" />
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#0978CD] rounded-full blur-[60px] opacity-20 group-hover:opacity-40 transition-opacity" />
                 <div className="relative z-10 space-y-4">
                   <h4 className="text-xl font-black leading-tight tracking-tight italic">Need Expert Advice?</h4>
                   <p className="text-slate-400 text-[13px] font-medium leading-relaxed">Our hardware specialists are ready to assist you with selection.</p>
-                  <Link to="/contact" className="flex items-center justify-center gap-2 w-full py-4 bg-indigo-600 text-white rounded-2xl text-[11px] font-black uppercase tracking-widest hover:bg-indigo-700 transition-all shadow-xl shadow-black/20">
+                  <Link to="/contact" className="flex items-center justify-center gap-2 w-full py-4 bg-[#0978CD] text-white rounded-2xl text-[11px] font-black uppercase tracking-widest hover:bg-indigo-700 transition-all shadow-xl shadow-black/20">
                     Consult Specialist <ArrowRight size={14} />
                   </Link>
                 </div>
@@ -232,10 +232,10 @@ export default function Shop() {
                 </div>
                 <div className="h-6 w-px bg-slate-100 hidden sm:block" />
                 <div className="flex items-center gap-2">
-                  <button onClick={() => setViewMode('grid')} className={`p-2.5 rounded-xl transition-all ${viewMode === 'grid' ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-100' : 'text-slate-300 hover:text-indigo-600 hover:bg-indigo-50'}`}>
+                  <button onClick={() => setViewMode('grid')} className={`p-2.5 rounded-xl transition-all ${viewMode === 'grid' ? 'bg-[#0978CD] text-white shadow-lg shadow-indigo-100' : 'text-slate-300 hover:text-[#0978CD] hover:bg-indigo-50'}`}>
                     <LayoutGrid size={20} />
                   </button>
-                  <button onClick={() => setViewMode('list')} className={`p-2.5 rounded-xl transition-all ${viewMode === 'list' ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-100' : 'text-slate-300 hover:text-indigo-600 hover:bg-indigo-50'}`}>
+                  <button onClick={() => setViewMode('list')} className={`p-2.5 rounded-xl transition-all ${viewMode === 'list' ? 'bg-[#0978CD] text-white shadow-lg shadow-indigo-100' : 'text-slate-300 hover:text-[#0978CD] hover:bg-indigo-50'}`}>
                     <List size={20} />
                   </button>
                 </div>
@@ -272,7 +272,7 @@ export default function Shop() {
             {/* Mobile Filter Button */}
             <button
               onClick={() => setIsMobileFilterOpen(true)}
-              className="lg:hidden w-full flex items-center justify-center gap-3 py-4 bg-indigo-600 text-white rounded-2xl font-black uppercase tracking-widest text-[11px] mb-10 shadow-xl shadow-indigo-100"
+              className="lg:hidden w-full flex items-center justify-center gap-3 py-4 bg-[#0978CD] text-white rounded-2xl font-black uppercase tracking-widest text-[11px] mb-10 shadow-xl shadow-indigo-100"
             >
               <Filter size={16} strokeWidth={2.5} /> Refine hardware selection
             </button>
@@ -280,7 +280,7 @@ export default function Shop() {
             {/* Grid Display */}
             {loading ? (
               <div className="py-40 flex flex-col items-center justify-center bg-white rounded-[32px] border border-slate-100 shadow-sm">
-                <Loader2 className="h-12 w-12 animate-spin text-indigo-600 mb-6" strokeWidth={3} />
+                <Loader2 className="h-12 w-12 animate-spin text-[#0978CD] mb-6" strokeWidth={3} />
                 <p className="text-[11px] font-black uppercase tracking-[0.3em] text-slate-400">Scanning inventory...</p>
               </div>
             ) : products.length === 0 ? (
@@ -290,7 +290,7 @@ export default function Shop() {
                 </div>
                 <h3 className="text-2xl font-black text-slate-900 mb-3 tracking-tight">No hardware found</h3>
                 <p className="text-slate-500 font-medium max-w-md mx-auto mb-10 text-base px-6">Adjust your refinement parameters or search keywords to find what you need.</p>
-                <button onClick={() => navigate('/shop')} className="px-10 py-4 bg-indigo-600 text-white rounded-2xl font-black uppercase tracking-widest text-[11px] shadow-xl shadow-indigo-100">Reset All Filters</button>
+                <button onClick={() => navigate('/shop')} className="px-10 py-4 bg-[#0978CD] text-white rounded-2xl font-black uppercase tracking-widest text-[11px] shadow-xl shadow-indigo-100">Reset All Filters</button>
               </div>
             ) : (
               <div className={`grid gap-6 ${viewMode === 'grid' ? 'grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4' : 'grid-cols-1'}`}>
@@ -326,7 +326,7 @@ export default function Shop() {
 
 
                       <Link to={`/product/${p.slug}`} className="block mb-4">
-                        <h3 className={`font-bold text-slate-800 group-hover:text-indigo-600 transition-colors leading-tight line-clamp-2 ${viewMode === 'list' ? 'text-2xl' : 'text-[15px] h-10'}`}>
+                        <h3 className={`font-bold text-slate-800 group-hover:text-[#0978CD] transition-colors leading-tight line-clamp-2 ${viewMode === 'list' ? 'text-2xl' : 'text-[15px] h-10'}`}>
                           {p.name}
                         </h3>
                       </Link>
@@ -335,7 +335,7 @@ export default function Shop() {
                         <p className="text-xl font-black text-slate-900 tracking-tight">${parseFloat(p.price).toLocaleString()}</p>
                         <button
                           onClick={(e) => { e.preventDefault(); addToCart(p); }}
-                          className="h-12 w-12 bg-indigo-600 text-white rounded-2xl flex items-center justify-center hover:bg-indigo-700 hover:shadow-lg hover:shadow-indigo-200 transition-all active:scale-90 shadow-xl shadow-indigo-100"
+                          className="h-12 w-12 bg-[#0978CD] text-white rounded-2xl flex items-center justify-center hover:bg-indigo-700 hover:shadow-lg hover:shadow-indigo-200 transition-all active:scale-90 shadow-xl shadow-indigo-100"
                         >
                           <ShoppingCart size={20} strokeWidth={2.5} />
                         </button>
@@ -378,7 +378,7 @@ export default function Shop() {
                       <button
                         key={cat.id}
                         onClick={() => { updateFilter('category', cat.slug); setIsMobileFilterOpen(false); }}
-                        className={`text-left py-4 px-6 text-sm font-bold rounded-2xl transition-all ${category === cat.slug ? 'bg-indigo-600 text-white shadow-xl shadow-indigo-100' : 'bg-slate-50 text-slate-600 hover:bg-indigo-50 hover:text-indigo-600'}`}
+                        className={`text-left py-4 px-6 text-sm font-bold rounded-2xl transition-all ${category === cat.slug ? 'bg-[#0978CD] text-white shadow-xl shadow-indigo-100' : 'bg-slate-50 text-slate-600 hover:bg-indigo-50 hover:text-[#0978CD]'}`}
                       >
                         {cat.name}
                       </button>

@@ -96,7 +96,7 @@ export default function ProductDetail() {
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ repeat: Infinity, duration: 1, ease: "linear" }}
-          className="w-12 h-12 border-4 border-slate-100 border-t-indigo-600 rounded-full mb-6"
+          className="w-12 h-12 border-4 border-slate-100 border-t-[#0978CD] rounded-full mb-6"
         />
         <p className="text-[11px] font-black uppercase tracking-[0.3em] text-slate-400">Loading details...</p>
       </div>
@@ -111,7 +111,7 @@ export default function ProductDetail() {
         </div>
         <h2 className="text-3xl font-black text-slate-900 mb-3 tracking-tight">Device Not Found</h2>
         <p className="text-slate-500 mb-12 max-w-md mx-auto text-base font-medium leading-relaxed">The requested hardware could not be located in our catalog.</p>
-        <Link to="/shop" className="px-12 py-5 bg-indigo-600 text-white rounded-2xl font-black text-[11px] uppercase tracking-[0.2em] transition-all shadow-xl shadow-indigo-100 hover:bg-indigo-700">Return to Catalog</Link>
+        <Link to="/shop" className="px-12 py-5 bg-[#0978CD] text-white rounded-2xl font-black text-[11px] uppercase tracking-[0.2em] transition-all shadow-xl shadow-indigo-100 hover:bg-indigo-700">Return to Catalog</Link>
       </div>
     );
   }
@@ -127,14 +127,14 @@ export default function ProductDetail() {
       <div className="w-full mx-auto px-6 lg:px-16 py-8">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
           <nav className="flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.2em] text-slate-400">
-            <Link to="/" className="hover:text-indigo-600 transition-colors">Home</Link>
+            <Link to="/" className="hover:text-[#0978CD] transition-colors">Home</Link>
             <ChevronRight size={14} className="text-slate-300" />
-            <Link to="/shop" className="hover:text-indigo-600 transition-colors">Catalog</Link>
+            <Link to="/shop" className="hover:text-[#0978CD] transition-colors">Catalog</Link>
             <ChevronRight size={14} className="text-slate-300" />
-            <span className="text-indigo-600 truncate max-w-[200px]">{product.name}</span>
+            <span className="text-[#0978CD] truncate max-w-[200px]">{product.name}</span>
           </nav>
 
-          <Link to="/shop" className="group flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.2em] text-slate-400 hover:text-indigo-600 transition-colors">
+          <Link to="/shop" className="group flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.2em] text-slate-400 hover:text-[#0978CD] transition-colors">
             <ArrowLeft size={16} /> Back to inventory
           </Link>
         </div>
@@ -171,7 +171,7 @@ export default function ProductDetail() {
                   {images.map((img, idx) => (
                     <button
                       key={idx} onClick={() => setActiveImage(idx)}
-                      className={`h-28 w-28 rounded-2xl border-2 flex-shrink-0 flex items-center justify-center p-4 transition-all bg-white shadow-sm ${activeImage === idx ? 'border-indigo-600 shadow-indigo-100' : 'border-slate-100 hover:border-indigo-200'}`}
+                      className={`h-28 w-28 rounded-2xl border-2 flex-shrink-0 flex items-center justify-center p-4 transition-all bg-white shadow-sm ${activeImage === idx ? 'border-[#0978CD] shadow-indigo-100' : 'border-slate-100 hover:border-indigo-200'}`}
                     >
                       <img src={img} alt="" className="max-w-full max-h-full object-contain" />
                     </button>
@@ -187,7 +187,7 @@ export default function ProductDetail() {
 
               <div className="space-y-6">
                 <div className="flex flex-wrap items-center gap-4">
-                  <span className="px-4 py-1.5 bg-indigo-50 text-indigo-600 text-[10px] font-black uppercase tracking-[0.2em] border border-indigo-100 rounded-full">
+                  <span className="px-4 py-1.5 bg-indigo-50 text-[#0978CD] text-[10px] font-black uppercase tracking-[0.2em] border border-indigo-100 rounded-full">
                     {product.brand_name || 'Official hardware'}
                   </span>
                   <div className="flex items-center gap-2 text-emerald-500 text-[11px] font-black uppercase tracking-widest">
@@ -224,18 +224,18 @@ export default function ProductDetail() {
               <div className="space-y-8 pt-4">
                 <div className="flex flex-col sm:flex-row items-center gap-5">
                   <div className="h-16 px-6 bg-slate-50 rounded-2xl border border-slate-100 flex items-center gap-10 w-full sm:w-auto">
-                    <button onClick={() => setQuantity(Math.max(1, quantity - 1))} className="text-slate-400 hover:text-indigo-600 transition-colors">
+                    <button onClick={() => setQuantity(Math.max(1, quantity - 1))} className="text-slate-400 hover:text-[#0978CD] transition-colors">
                       <Minus size={20} strokeWidth={3} />
                     </button>
                     <span className="text-xl font-black text-slate-900 min-w-[24px] text-center">{quantity}</span>
-                    <button onClick={() => setQuantity(quantity + 1)} className="text-slate-400 hover:text-indigo-600 transition-colors">
+                    <button onClick={() => setQuantity(quantity + 1)} className="text-slate-400 hover:text-[#0978CD] transition-colors">
                       <Plus size={20} strokeWidth={3} />
                     </button>
                   </div>
 
                   <button
                     onClick={handleAddToCart} disabled={isAdded}
-                    className={`flex-1 h-16 rounded-2xl flex items-center justify-center gap-4 font-black text-[12px] uppercase tracking-[0.2em] transition-all active:scale-95 disabled:opacity-70 shadow-2xl ${isAdded ? 'bg-emerald-500 text-white shadow-emerald-100' : 'bg-indigo-600 text-white hover:bg-indigo-700 shadow-indigo-100'}`}
+                    className={`flex-1 h-16 rounded-2xl flex items-center justify-center gap-4 font-black text-[12px] uppercase tracking-[0.2em] transition-all active:scale-95 disabled:opacity-70 shadow-2xl ${isAdded ? 'bg-emerald-500 text-white shadow-emerald-100' : 'bg-[#0978CD] text-white hover:bg-indigo-700 shadow-indigo-100'}`}
                   >
                     {isAdded ? <><CheckCircle2 size={22} /> Added to catalog</> : <><ShoppingCart size={20} /> Add to selection</>}
                   </button>
@@ -244,7 +244,7 @@ export default function ProductDetail() {
                 {/* Service Highlights */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div className="p-6 bg-slate-50/50 border border-slate-100 rounded-3xl flex items-center gap-5 group hover:bg-white hover:border-indigo-100 transition-all duration-500">
-                    <div className="h-12 w-12 bg-white text-indigo-600 rounded-2xl flex items-center justify-center shadow-sm group-hover:bg-indigo-600 group-hover:text-white transition-all">
+                    <div className="h-12 w-12 bg-white text-[#0978CD] rounded-2xl flex items-center justify-center shadow-sm group-hover:bg-[#0978CD] group-hover:text-white transition-all">
                       <Truck size={22} strokeWidth={2.5} />
                     </div>
                     <div>
@@ -273,10 +273,10 @@ export default function ProductDetail() {
                   ].map(tab => (
                     <button
                       key={tab.id} onClick={() => setActiveTab(tab.id)}
-                      className={`pb-5 text-[12px] font-black uppercase tracking-[0.2em] relative transition-all ${activeTab === tab.id ? 'text-indigo-600' : 'text-slate-400 hover:text-slate-600'}`}
+                      className={`pb-5 text-[12px] font-black uppercase tracking-[0.2em] relative transition-all ${activeTab === tab.id ? 'text-[#0978CD]' : 'text-slate-400 hover:text-slate-600'}`}
                     >
                       {tab.label}
-                      {activeTab === tab.id && <motion.div layoutId="activeTab" className="absolute bottom-0 left-0 right-0 h-1 bg-indigo-600 rounded-full" />}
+                      {activeTab === tab.id && <motion.div layoutId="activeTab" className="absolute bottom-0 left-0 right-0 h-1 bg-[#0978CD] rounded-full" />}
                     </button>
                   ))}
                 </div>
@@ -298,11 +298,11 @@ export default function ProductDetail() {
                   )}
                   {activeTab === 'support' && (
                     <div className="bg-slate-900 p-10 rounded-[32px] text-white relative overflow-hidden group">
-                      <div className="absolute top-0 right-0 w-40 h-40 bg-indigo-600 rounded-full blur-[80px] opacity-20 group-hover:opacity-40 transition-opacity" />
+                      <div className="absolute top-0 right-0 w-40 h-40 bg-[#0978CD] rounded-full blur-[80px] opacity-20 group-hover:opacity-40 transition-opacity" />
                       <div className="relative z-10">
                         <h4 className="text-xl font-black mb-4 tracking-tight italic">Expert configuration help.</h4>
                         <p className="text-slate-400 text-sm font-medium mb-8 leading-relaxed max-w-sm">Our engineering team is available to assist with setup and workflow optimization for your new hardware.</p>
-                        <Link to="/contact" className="inline-flex items-center gap-3 text-[11px] font-black uppercase tracking-widest bg-indigo-600 text-white px-8 py-4 rounded-2xl hover:bg-indigo-700 transition-all shadow-xl shadow-indigo-900/40">
+                        <Link to="/contact" className="inline-flex items-center gap-3 text-[11px] font-black uppercase tracking-widest bg-[#0978CD] text-white px-8 py-4 rounded-2xl hover:bg-indigo-700 transition-all shadow-xl shadow-indigo-900/40">
                           Connect with Support <ExternalLink size={16} />
                         </Link>
                       </div>
@@ -319,12 +319,12 @@ export default function ProductDetail() {
           <div className="mt-32 pt-20 border-t border-slate-100">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8 text-center md:text-left">
               <div className="space-y-3">
-                <span className="text-indigo-600 font-black text-[11px] uppercase tracking-[0.3em]">Hardware combinations</span>
+                <span className="text-[#0978CD] font-black text-[11px] uppercase tracking-[0.3em]">Hardware combinations</span>
                 <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tighter leading-none">
-                  Related <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500 italic">solutions.</span>
+                  Related <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0978CD] to-blue-500 italic">solutions.</span>
                 </h2>
               </div>
-              <Link to="/shop" className="group flex items-center gap-3 text-[12px] font-black uppercase tracking-widest text-slate-400 hover:text-indigo-600 transition-colors">
+              <Link to="/shop" className="group flex items-center gap-3 text-[12px] font-black uppercase tracking-widest text-slate-400 hover:text-[#0978CD] transition-colors">
                 View Full Catalog <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
@@ -341,7 +341,7 @@ export default function ProductDetail() {
                     <img src={getImagePath(p.images)} alt="" className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-700 mix-blend-multiply" />
                   </div>
                   <div className="space-y-3">
-                    <span className="text-[9px] font-black text-slate-400 uppercase tracking-[0.2em]">{p.brand_name || 'Merchant'}</span>                    <h4 className="text-[13px] font-bold text-slate-800 group-hover:text-indigo-600 transition-colors leading-tight line-clamp-2 h-8">{p.name}</h4>
+                    <span className="text-[9px] font-black text-slate-400 uppercase tracking-[0.2em]">{p.brand_name || 'Merchant'}</span>                    <h4 className="text-[13px] font-bold text-slate-800 group-hover:text-[#0978CD] transition-colors leading-tight line-clamp-2 h-8">{p.name}</h4>
                     <p className="text-lg font-black text-slate-900 tracking-tight pt-2 border-t border-slate-50">${parseFloat(p.price).toLocaleString()}</p>
                   </div>
                 </Link>

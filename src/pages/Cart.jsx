@@ -17,7 +17,7 @@ export default function Cart() {
         </div>
         <h2 className="text-3xl font-black text-slate-900 mb-4 tracking-tight">Your Cart Is Empty</h2>
         <p className="text-slate-500 font-medium text-base mb-12 max-w-md leading-relaxed">You haven't added any hardware to your selection yet.</p>
-        <Link to="/shop" className="px-12 py-5 bg-indigo-600 text-white font-black text-[11px] uppercase tracking-[0.2em] rounded-2xl hover:bg-indigo-700 transition-all shadow-xl shadow-indigo-100 active:scale-95">
+        <Link to="/shop" className="px-12 py-5 bg-[#0978CD] text-white font-black text-[11px] uppercase tracking-[0.2em] rounded-2xl hover:bg-indigo-700 transition-all shadow-xl shadow-indigo-100 active:scale-95">
           Start Shopping
         </Link>
       </div>
@@ -31,12 +31,12 @@ export default function Cart() {
       <div className="w-full mx-auto px-6 lg:px-16 py-8 mb-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 text-center md:text-left">
           <div className="space-y-4">
-            <div className="flex items-center justify-center md:justify-start gap-2 text-indigo-600">
-              <div className="w-1.5 h-5 bg-indigo-600 rounded-full" />
+            <div className="flex items-center justify-center md:justify-start gap-2 text-[#0978CD]">
+              <div className="w-1.5 h-5 bg-[#0978CD] rounded-full" />
               <span className="text-[11px] font-black uppercase tracking-[0.2em]">Order Review</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-black text-slate-900 leading-none tracking-tighter">
-              Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500 italic">Shopping Cart.</span>
+              Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0978CD] to-blue-500 italic">Shopping Cart.</span>
             </h1>
           </div>
           <div className="inline-flex items-center gap-4 px-6 py-3 bg-white rounded-2xl border border-slate-100 shadow-sm self-center md:self-auto">
@@ -72,18 +72,18 @@ export default function Cart() {
 
                   <div className="flex-1 min-w-0 w-full">
                     <div className="flex flex-col mb-8">
-                      <span className="text-[10px] font-black text-indigo-600 uppercase tracking-[0.2em] mb-2">{item.brand_name || 'Verified hardware'}</span>
+                      <span className="text-[10px] font-black text-[#0978CD] uppercase tracking-[0.2em] mb-2">{item.brand_name || 'Verified hardware'}</span>
                       <Link to={`/product/${item.slug}`}>
-                        <h3 className="text-2xl font-bold text-slate-800 hover:text-indigo-600 transition-colors leading-tight line-clamp-2">{item.name}</h3>
+                        <h3 className="text-2xl font-bold text-slate-800 hover:text-[#0978CD] transition-colors leading-tight line-clamp-2">{item.name}</h3>
                       </Link>
                     </div>
 
                     <div className="flex flex-wrap items-center justify-between gap-8 border-t border-slate-50 pt-8">
                       <div className="flex items-center gap-12">
                         <div className="h-14 px-5 bg-slate-50 rounded-2xl border border-slate-100 flex items-center gap-8">
-                          <button onClick={() => updateQuantity(item.id, item.quantity - 1)} className="text-slate-400 hover:text-indigo-600 transition-colors"><Minus size={18} strokeWidth={3} /></button>
+                          <button onClick={() => updateQuantity(item.id, item.quantity - 1)} className="text-slate-400 hover:text-[#0978CD] transition-colors"><Minus size={18} strokeWidth={3} /></button>
                           <span className="text-lg font-black text-slate-900 w-6 text-center">{item.quantity}</span>
-                          <button onClick={() => updateQuantity(item.id, item.quantity + 1)} className="text-slate-400 hover:text-indigo-600 transition-colors"><Plus size={18} strokeWidth={3} /></button>
+                          <button onClick={() => updateQuantity(item.id, item.quantity + 1)} className="text-slate-400 hover:text-[#0978CD] transition-colors"><Plus size={18} strokeWidth={3} /></button>
                         </div>
                         <div className="space-y-1">
                           <span className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] block">Unit Price</span>
@@ -94,7 +94,7 @@ export default function Cart() {
                       <div className="flex items-center gap-10">
                         <div className="space-y-1 text-right">
                           <span className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] block">Total</span>
-                          <span className="text-3xl font-black text-indigo-600 tracking-tighter">${(item.price * item.quantity).toLocaleString()}</span>
+                          <span className="text-3xl font-black text-[#0978CD] tracking-tighter">${(item.price * item.quantity).toLocaleString()}</span>
                         </div>
                         <div className="h-12 w-px bg-slate-100 hidden sm:block" />
                         <button
@@ -111,8 +111,8 @@ export default function Cart() {
               ))}
             </AnimatePresence>
 
-            <Link to="/shop" className="group inline-flex items-center gap-3 text-[11px] font-black text-slate-400 hover:text-indigo-600 transition-all pt-12 uppercase tracking-[0.25em]">
-              <div className="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center group-hover:border-indigo-600 transition-all">
+            <Link to="/shop" className="group inline-flex items-center gap-3 text-[11px] font-black text-slate-400 hover:text-[#0978CD] transition-all pt-12 uppercase tracking-[0.25em]">
+              <div className="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center group-hover:border-[#0978CD] transition-all">
                 <ChevronLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
               </div>
               Continue Shopping
@@ -123,7 +123,7 @@ export default function Cart() {
           <div className="xl:col-span-4">
             <div className="bg-white rounded-[40px] p-10 lg:p-14 text-slate-900 border border-slate-100 shadow-2xl shadow-indigo-100/30 sticky top-32">
               <div className="flex items-center gap-5 mb-12 pb-10 border-b border-slate-50">
-                <div className="w-14 h-14 bg-indigo-50 text-indigo-600 rounded-[20px] flex items-center justify-center shadow-sm">
+                <div className="w-14 h-14 bg-indigo-50 text-[#0978CD] rounded-[20px] flex items-center justify-center shadow-sm">
                   <Package size={26} strokeWidth={2.5} />
                 </div>
                 <div>
@@ -139,17 +139,17 @@ export default function Cart() {
                 </div>
                 <div className="flex justify-between items-center pb-8 border-b border-slate-50">
                   <span className="text-[11px] font-black text-slate-400 uppercase tracking-[0.2em]">Logistics</span>
-                  <span className="text-[10px] font-black text-indigo-600 uppercase bg-indigo-50 px-4 py-1.5 border border-indigo-100 rounded-full tracking-widest">Next-Day Ship</span>
+                  <span className="text-[10px] font-black text-[#0978CD] uppercase bg-indigo-50 px-4 py-1.5 border border-indigo-100 rounded-full tracking-widest">Next-Day Ship</span>
                 </div>
                 <div className="flex justify-between items-end pt-4">
                   <span className="text-[12px] font-black uppercase tracking-[0.25em] text-slate-900">Grand Total</span>
-                  <span className="text-5xl font-black text-indigo-600 leading-none tracking-tighter italic">${total.toLocaleString()}</span>
+                  <span className="text-5xl font-black text-[#0978CD] leading-none tracking-tighter italic">${total.toLocaleString()}</span>
                 </div>
               </div>
 
               <Link
                 to="/checkout"
-                className="w-full h-16 bg-indigo-600 text-white rounded-2xl flex items-center justify-center gap-4 text-[11px] font-black uppercase tracking-[0.25em] transition-all shadow-xl shadow-indigo-100 hover:bg-indigo-700 active:scale-95 group"
+                className="w-full h-16 bg-[#0978CD] text-white rounded-2xl flex items-center justify-center gap-4 text-[11px] font-black uppercase tracking-[0.25em] transition-all shadow-xl shadow-indigo-100 hover:bg-indigo-700 active:scale-95 group"
               >
                 Proceed to Checkout
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
@@ -158,7 +158,7 @@ export default function Cart() {
               <div className="mt-12 pt-10 border-t border-slate-50 space-y-8">
                 <div className="flex items-center gap-5 text-slate-400">
                   <div className="h-12 w-12 bg-slate-50 rounded-2xl flex items-center justify-center shrink-0">
-                    <ShieldCheck size={24} className="text-indigo-600" />
+                    <ShieldCheck size={24} className="text-[#0978CD]" />
                   </div>
                   <p className="text-[11px] font-bold leading-relaxed uppercase tracking-wider">
                     Your purchase is protected by brand warranty protocols.                  </p>

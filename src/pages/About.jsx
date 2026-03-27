@@ -17,16 +17,16 @@ export default function About() {
       <div className="w-full mx-auto px-6 lg:px-16 py-10 md:py-14 mb-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 text-center md:text-left">
           <div className="space-y-4">
-            <div className="flex items-center justify-center md:justify-start gap-2 text-indigo-600">
-              <div className="w-1.5 h-5 bg-indigo-600 rounded-full" />
+            <div className="flex items-center justify-center md:justify-start gap-2 text-[#0978CD]">
+              <div className="w-1.5 h-5 bg-[#0978CD] rounded-full" />
               <span className="text-[11px] font-black uppercase tracking-[0.2em]">Our Story</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-black text-slate-900 leading-none tracking-tighter">
-              About <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500 italic">Us.</span>
+              About <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0978CD] to-blue-500 italic">Us.</span>
             </h1>
           </div>
           <div className="inline-flex items-center gap-3 px-6 py-3 bg-white rounded-2xl border border-slate-100 shadow-sm self-center md:self-auto">
-            <ShieldCheck size={18} className="text-indigo-600" strokeWidth={2.5} />
+            <ShieldCheck size={18} className="text-[#0978CD]" strokeWidth={2.5} />
           </div>
         </div>
       </div>
@@ -40,7 +40,7 @@ export default function About() {
           <div className="lg:col-span-7 space-y-10 relative z-10">
             <div className="space-y-6">
               <h2 className="text-3xl lg:text-5xl font-black text-slate-900 leading-tight tracking-tight italic">Built on trust <br /> and precision.</h2>
-              <div className="w-16 h-1.5 bg-indigo-600 rounded-full" />
+              <div className="w-16 h-1.5 bg-[#0978CD] rounded-full" />
             </div>
             <p className="text-slate-500 text-lg md:text-xl font-medium leading-relaxed max-w-2xl">
               Founded in 2026, Printer Mixer was established to solve a singular challenge: making the acquisition of high-performance printing infrastructure simple, transparent, and absolutely authentic. We bridge the gap between complex industrial solutions and a seamless, personalized experience.
@@ -57,7 +57,7 @@ export default function About() {
         {/* --- Section 2: Core Capabilities --- */}
         <section className="space-y-16">
           <div className="flex flex-col items-center text-center gap-4">
-            <span className="text-[11px] font-black text-indigo-600 uppercase tracking-[0.3em]">Operational Scope</span>
+            <span className="text-[11px] font-black text-[#0978CD] uppercase tracking-[0.3em]">Operational Scope</span>
             <h2 className="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter italic">Our core capabilities.</h2>
             <div className="w-16 h-1.5 bg-slate-100 rounded-full mx-auto" />
           </div>
@@ -72,7 +72,7 @@ export default function About() {
                 className="p-12 bg-white border border-slate-100 rounded-[40px] shadow-xl shadow-indigo-100/20 group transition-all relative overflow-hidden"
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-50 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-indigo-100 transition-colors" />
-                <div className="h-16 w-16 rounded-[20px] bg-slate-50 border border-slate-100 flex items-center justify-center text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-500 mb-10 shadow-sm relative z-10">
+                <div className="h-16 w-16 rounded-[20px] bg-slate-50 border border-slate-100 flex items-center justify-center text-[#0978CD] group-hover:bg-[#0978CD] group-hover:text-white transition-all duration-500 mb-10 shadow-sm relative z-10">
                   <item.icon size={28} strokeWidth={2.5} />
                 </div>
                 <h3 className="text-2xl font-black text-slate-900 mb-4 relative z-10 tracking-tight">{item.title}</h3>
@@ -85,7 +85,7 @@ export default function About() {
         {/* --- Section 3: Values Module --- */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="p-12 md:p-20 bg-slate-900 text-white space-y-10 relative overflow-hidden rounded-[40px] shadow-2xl">
-            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-indigo-600 rounded-full blur-[120px] -mr-40 -mt-40 opacity-20" />
+            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#0978CD] rounded-full blur-[120px] -mr-40 -mt-40 opacity-20" />
             <div className="relative z-10 space-y-8">
               <div className="flex items-center gap-3">
                 <Target className="text-indigo-400" size={24} strokeWidth={2.5} />
@@ -102,7 +102,7 @@ export default function About() {
             <div className="absolute top-0 left-0 w-64 h-64 bg-indigo-50 rounded-full blur-[80px] -ml-32 -mt-32 opacity-60" />
             <div className="relative z-10 space-y-8">
               <div className="flex items-center gap-3">
-                <Users className="text-indigo-600" size={24} strokeWidth={2.5} />
+                <Users className="text-[#0978CD]" size={24} strokeWidth={2.5} />
                 <span className="text-[11px] font-black uppercase tracking-[0.3em] text-slate-400">Our Community</span>
               </div>
               <h2 className="text-4xl md:text-5xl font-black leading-[1.1] tracking-tighter italic">Nationwide <br /> reach.</h2>
@@ -122,7 +122,7 @@ export default function About() {
               <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tighter">The Printer Mixer Advantage.</h2>
               <p className="text-slate-400 text-[13px] font-black uppercase tracking-[0.2em]">hardware ecosystem benefits</p>
             </div>
-            <Link to="/shop" className="group flex items-center gap-3 text-[11px] font-black uppercase tracking-[0.3em] text-indigo-600 hover:text-indigo-700 transition-colors">
+            <Link to="/shop" className="group flex items-center gap-3 text-[11px] font-black uppercase tracking-[0.3em] text-[#0978CD] hover:text-indigo-700 transition-colors">
               Explore Inventory <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
@@ -138,7 +138,7 @@ export default function About() {
                 <div className={`h-14 w-14 rounded-2xl ${item.bg} ${item.color} flex items-center justify-center shrink-0 group-hover:scale-110 transition-all duration-500 shadow-sm`}>
                   <item.icon size={22} strokeWidth={2.5} />
                 </div>
-                <h4 className="text-[13px] font-black text-slate-800 capitalize group-hover:text-indigo-600 transition-colors">{item.title}</h4>
+                <h4 className="text-[13px] font-black text-slate-800 capitalize group-hover:text-[#0978CD] transition-colors">{item.title}</h4>
               </div>
             ))}
           </div>

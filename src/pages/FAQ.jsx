@@ -72,23 +72,23 @@ export default function FAQ() {
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-10">
           <div className="space-y-4">
             <nav className="flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.2em] text-slate-400">
-              <Link to="/" className="hover:text-indigo-600 transition-colors">Home</Link>
+              <Link to="/" className="hover:text-[#0978CD] transition-colors">Home</Link>
               <ChevronRight size={14} className="text-slate-300" />
-              <span className="text-indigo-600">Knowledge Base</span>
+              <span className="text-[#0978CD]">Knowledge Base</span>
             </nav>
             <h1 className="text-4xl md:text-5xl font-black text-slate-900 leading-none tracking-tighter">
-              Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500 italic">Questions.</span>
+              Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0978CD] to-blue-500 italic">Questions.</span>
             </h1>
           </div>
 
           <div className="w-full max-w-xl relative group">
-            <Search className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-indigo-600 transition-colors" size={20} strokeWidth={2.5} />
+            <Search className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-[#0978CD] transition-colors" size={20} strokeWidth={2.5} />
             <input
               type="text"
               placeholder="Search help documentation..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full h-16 pl-14 pr-6 bg-white border border-slate-100 rounded-2xl focus:border-indigo-600 outline-none text-sm font-bold text-slate-800 transition-all placeholder:text-slate-300 shadow-sm"
+              className="w-full h-16 pl-14 pr-6 bg-white border border-slate-100 rounded-2xl focus:border-[#0978CD] outline-none text-sm font-bold text-slate-800 transition-all placeholder:text-slate-300 shadow-sm"
             />
           </div>
         </div>
@@ -110,8 +110,8 @@ export default function FAQ() {
                       setOpenIndex(0);
                     }}
                     className={`w-full text-left px-6 py-4 rounded-2xl text-[13px] font-black uppercase tracking-widest transition-all ${activeCategory === cat.category
-                      ? 'bg-indigo-600 text-white shadow-xl shadow-indigo-100 translate-x-1'
-                      : 'text-slate-400 hover:bg-slate-50 hover:text-indigo-600'
+                      ? 'bg-[#0978CD] text-white shadow-xl shadow-indigo-100 translate-x-1'
+                      : 'text-slate-400 hover:bg-slate-50 hover:text-[#0978CD]'
                       }`}
                   >
                     {cat.category}
@@ -122,7 +122,7 @@ export default function FAQ() {
 
             {/* Support CTA */}
             <div className="p-10 bg-slate-900 text-white relative overflow-hidden rounded-[32px] group shadow-2xl">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-600 rounded-full blur-[60px] opacity-20 group-hover:opacity-40 transition-opacity" />
+              <div className="absolute top-0 right-0 w-32 h-32 bg-[#0978CD] rounded-full blur-[60px] opacity-20 group-hover:opacity-40 transition-opacity" />
               <div className="relative z-10 space-y-6">
                 <div className="flex items-center gap-3">
                   <Sparkles className="text-indigo-400" size={24} strokeWidth={2.5} />
@@ -130,7 +130,7 @@ export default function FAQ() {
                 </div>
                 <h4 className="text-2xl font-black leading-tight tracking-tight italic">Need Personal Assistance?</h4>
                 <p className="text-slate-400 text-sm font-medium leading-relaxed">Our specialists are ready to help with your complex expert inquiries.</p>
-                <Link to="/contact" className="inline-flex items-center gap-3 bg-indigo-600 text-white px-8 py-4 rounded-2xl text-[11px] font-black uppercase tracking-widest hover:bg-indigo-700 transition-all shadow-xl shadow-indigo-900/40">
+                <Link to="/contact" className="inline-flex items-center gap-3 bg-[#0978CD] text-white px-8 py-4 rounded-2xl text-[11px] font-black uppercase tracking-widest hover:bg-indigo-700 transition-all shadow-xl shadow-indigo-900/40">
                   Contact Support <ArrowRight size={16} />
                 </Link>
               </div>
@@ -148,7 +148,7 @@ export default function FAQ() {
                 className="space-y-5"
               >
                 <div className="flex items-center gap-4 mb-10">
-                  <div className="w-1.5 h-6 bg-indigo-600 rounded-full" />
+                  <div className="w-1.5 h-6 bg-[#0978CD] rounded-full" />
                   <h3 className="text-3xl font-black text-slate-900 tracking-tight italic">
                     {activeCategory}
                   </h3>
@@ -157,18 +157,18 @@ export default function FAQ() {
                 {filteredData.find(c => c.category === activeCategory)?.questions.map((faq, idx) => (
                   <div
                     key={idx}
-                    className={`bg-white rounded-[32px] border transition-all duration-500 overflow-hidden ${openIndex === idx ? 'border-indigo-600 shadow-2xl shadow-indigo-100/50' : 'border-slate-100 hover:border-indigo-200'
+                    className={`bg-white rounded-[32px] border transition-all duration-500 overflow-hidden ${openIndex === idx ? 'border-[#0978CD] shadow-2xl shadow-indigo-100/50' : 'border-slate-100 hover:border-indigo-200'
                       }`}
                   >
                     <button
                       onClick={() => setOpenIndex(openIndex === idx ? -1 : idx)}
                       className="w-full px-10 py-10 flex items-center justify-between text-left group"
                     >
-                      <span className={`text-lg font-bold leading-tight pr-12 transition-colors ${openIndex === idx ? 'text-indigo-600' : 'text-slate-800 group-hover:text-indigo-600'
+                      <span className={`text-lg font-bold leading-tight pr-12 transition-colors ${openIndex === idx ? 'text-[#0978CD]' : 'text-slate-800 group-hover:text-[#0978CD]'
                         }`}>
                         {faq.q}
                       </span>
-                      <div className={`h-12 w-12 rounded-2xl flex items-center justify-center shrink-0 transition-all duration-500 ${openIndex === idx ? 'bg-indigo-600 text-white rotate-180' : 'bg-slate-50 text-slate-300 group-hover:bg-indigo-50 group-hover:text-indigo-600'
+                      <div className={`h-12 w-12 rounded-2xl flex items-center justify-center shrink-0 transition-all duration-500 ${openIndex === idx ? 'bg-[#0978CD] text-white rotate-180' : 'bg-slate-50 text-slate-300 group-hover:bg-indigo-50 group-hover:text-[#0978CD]'
                         }`}>
                         {openIndex === idx ? <Minus size={20} strokeWidth={3} /> : <Plus size={20} strokeWidth={3} />}
                       </div>
@@ -202,7 +202,7 @@ export default function FAQ() {
                     </div>
                     <h4 className="text-2xl font-black text-slate-900 tracking-tight">No results found</h4>
                     <p className="text-slate-400 font-medium mt-3 text-base">Try broader keywords or browse categories for assistance.</p>
-                    <button onClick={() => setSearchQuery('')} className="mt-8 text-indigo-600 font-black uppercase text-[10px] tracking-widest underline underline-offset-8">Clear Search Filter</button>
+                    <button onClick={() => setSearchQuery('')} className="mt-8 text-[#0978CD] font-black uppercase text-[10px] tracking-widest underline underline-offset-8">Clear Search Filter</button>
                   </div>
                 )}
               </motion.div>

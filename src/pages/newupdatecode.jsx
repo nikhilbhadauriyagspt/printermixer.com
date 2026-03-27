@@ -28,7 +28,7 @@
                         >
 
                             <div className="space-y-2">
-                                <span className="inline-block px-4 py-1.5 bg-indigo-600 text-white text-[10px] font-black uppercase tracking-[0.3em] rounded-full mb-4">
+                                <span className="inline-block px-4 py-1.5 bg-[#0978CD] text-white text-[10px] font-black uppercase tracking-[0.3em] rounded-full mb-4">
                                     Expert Guide
                                 </span>
                                 <h2 className="text-xl md:text-4xl lg:text-5xl font-black text-slate-900 leading-[1.1]">
@@ -45,7 +45,7 @@
                                         transition={{ delay: 0.2 + (i * 0.1) }}
                                         className="flex items-center justify-start gap-4 text-slate-700 font-bold text-sm md:text-base lg:text-lg"
                                     >
-                                        <div className="w-2 h-2 rounded-full bg-indigo-600 shrink-0" />
+                                        <div className="w-2 h-2 rounded-full bg-[#0978CD] shrink-0" />
                                         <span>{text}</span>
                                     </motion.li>
                                 ))}
@@ -56,7 +56,7 @@
                                 {slides.map((_, idx) => (
                                     <div
                                         key={idx}
-                                        className={`h-1.5 rounded-full transition-all duration-300 ${idx === currentSlide ? 'w-8 bg-indigo-600' : 'w-2 bg-slate-300'}`}
+                                        className={`h-1.5 rounded-full transition-all duration-300 ${idx === currentSlide ? 'w-8 bg-[#0978CD]' : 'w-2 bg-slate-300'}`}
                                     />
                                 ))}
                             </div>

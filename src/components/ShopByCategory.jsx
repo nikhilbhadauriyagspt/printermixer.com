@@ -26,12 +26,12 @@ export default function ShopByCategoryGrid({ categories = [] }) {
       <div className="w-full mx-auto px-4 lg:px-16">
         <div className="flex flex-col md:flex-row items-end justify-between mb-12 gap-6">
           <div className="space-y-3">
-            <span className="text-indigo-600 font-black text-[11px] uppercase tracking-[0.3em]">Hardware Categories</span>
+            <span className="text-[#0978CD] font-black text-[11px] uppercase tracking-[0.3em]">Hardware Categories</span>
             <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tighter leading-none">
-              Shop by <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500 italic">Industry.</span>
+              Shop by <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0978CD] to-blue-500 italic">Industry.</span>
             </h2>
           </div>
-          <Link to="/shop" className="group flex items-center gap-3 text-[12px] font-black uppercase tracking-widest text-slate-400 hover:text-indigo-600 transition-colors">
+          <Link to="/shop" className="group flex items-center gap-3 text-[12px] font-black uppercase tracking-widest text-slate-400 hover:text-[#0978CD] transition-colors">
             View All Series <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
@@ -62,14 +62,14 @@ export default function ShopByCategoryGrid({ categories = [] }) {
               <div className="relative z-10 flex flex-col flex-1">
 
 
-                <h3 className="text-xl font-black text-slate-900 leading-tight mb-4 group-hover:text-indigo-600 transition-colors">
+                <h3 className="text-xl font-black text-slate-900 leading-tight mb-4 group-hover:text-[#0978CD] transition-colors">
                   {cat.name}
                 </h3>
 
                 <div className="mt-auto">
                   <Link
                     to={`/shop?category=${cat.slug}`}
-                    className="inline-flex items-center gap-2 text-[11px] font-black uppercase tracking-widest text-slate-400 group-hover:text-indigo-600 transition-all"
+                    className="inline-flex items-center gap-2 text-[11px] font-black uppercase tracking-widest text-slate-400 group-hover:text-[#0978CD] transition-all"
                   >
                     Explore Hardware <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                   </Link>

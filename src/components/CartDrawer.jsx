@@ -35,7 +35,7 @@ export default function CartDrawer() {
             <div className="p-8 border-b border-slate-100 flex items-center justify-between bg-slate-50/50">
               <div>
                 <h2 className="text-2xl font-black text-slate-900 tracking-tight uppercase italic">Selection.</h2>
-                <p className="text-[11px] font-black text-indigo-600 mt-1 uppercase tracking-widest">{cartCount} items</p>              </div>
+                <p className="text-[11px] font-black text-[#0978CD] mt-1 uppercase tracking-widest">{cartCount} items</p>              </div>
               <button
                 onClick={closeCartDrawer}
                 className="h-12 w-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-slate-400 hover:text-red-500 transition-all border border-slate-100"
@@ -60,7 +60,7 @@ export default function CartDrawer() {
                         return "https://via.placeholder.com/150";
                       }
                     };
-                    
+
                     return (
                       <div key={item.id} className="flex gap-6 group pb-8 border-b border-slate-50 last:border-0 relative">
                         <div className="h-28 w-28 rounded-3xl bg-slate-50 p-4 flex items-center justify-center flex-shrink-0 border border-slate-50 group-hover:bg-indigo-50/30 group-hover:border-indigo-100 transition-all duration-500 overflow-hidden">
@@ -74,8 +74,8 @@ export default function CartDrawer() {
                         <div className="flex-1 min-w-0 flex flex-col justify-between">
                           <div>
                             <div className="flex items-center justify-between mb-1 pr-10">
-                               <p className="text-[10px] font-black text-indigo-600 uppercase tracking-widest">{item.brand_name || 'Verified'}</p>
-                               <button
+                              <p className="text-[10px] font-black text-[#0978CD] uppercase tracking-widest">{item.brand_name || 'Verified'}</p>
+                              <button
                                 onClick={() => removeFromCart(item.id)}
                                 className="absolute top-0 right-0 p-2 text-slate-300 hover:text-red-500 transition-colors"
                                 title="Remove unit"
@@ -83,26 +83,26 @@ export default function CartDrawer() {
                                 <Trash2 size={18} />
                               </button>
                             </div>
-                            <h3 className="text-[15px] font-bold text-slate-800 leading-tight line-clamp-2 hover:text-indigo-600 transition-colors">
+                            <h3 className="text-[15px] font-bold text-slate-800 leading-tight line-clamp-2 hover:text-[#0978CD] transition-colors">
                               <Link to={`/product/${item.slug}`} onClick={closeCartDrawer}>
                                 {item.name}
                               </Link>
                             </h3>
                           </div>
-                          
+
                           <div className="flex items-center justify-between mt-4">
                             <div className="flex items-center gap-4 bg-slate-50 rounded-xl px-4 py-2 border border-slate-100 shadow-inner">
-                              <button 
-                                onClick={() => updateQuantity(item.id, item.quantity - 1)} 
-                                className="text-slate-400 hover:text-indigo-600 transition-colors"
+                              <button
+                                onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                                className="text-slate-400 hover:text-[#0978CD] transition-colors"
                                 disabled={item.quantity <= 1}
                               >
                                 <Minus size={16} strokeWidth={3} />
                               </button>
                               <span className="text-sm font-black min-w-[20px] text-center text-slate-900">{item.quantity}</span>
-                              <button 
-                                onClick={() => updateQuantity(item.id, item.quantity + 1)} 
-                                className="text-slate-400 hover:text-indigo-600 transition-colors"
+                              <button
+                                onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                                className="text-slate-400 hover:text-[#0978CD] transition-colors"
                               >
                                 <Plus size={16} strokeWidth={3} />
                               </button>
@@ -124,7 +124,7 @@ export default function CartDrawer() {
                   <h3 className="text-2xl font-black text-slate-900 mb-3 tracking-tight">System cache empty.</h3>
                   <p className="text-slate-500 font-medium max-w-[280px] mb-12 text-base leading-relaxed">Your selection doesn't contain any hardware items at this time.</p>                  <button
                     onClick={closeCartDrawer}
-                    className="px-12 py-5 bg-indigo-600 text-white font-black text-[11px] uppercase tracking-[0.2em] rounded-2xl hover:bg-indigo-700 transition-all shadow-xl shadow-indigo-100 active:scale-95"
+                    className="px-12 py-5 bg-[#0978CD] text-white font-black text-[11px] uppercase tracking-[0.2em] rounded-2xl hover:bg-indigo-700 transition-all shadow-xl shadow-indigo-100 active:scale-95"
                   >
                     Scan Catalog
                   </button>
@@ -139,17 +139,17 @@ export default function CartDrawer() {
                   <div>
                     <span className="text-[11px] font-black text-slate-400 uppercase tracking-widest">Aggregate valuation</span>
                     <p className="text-[10px] font-bold text-emerald-500 uppercase mt-1 flex items-center gap-1">
-                       <ShieldCheck size={12} /> Secure Transaction
+                      <ShieldCheck size={12} /> Secure Transaction
                     </p>
                   </div>
                   <span className="text-4xl font-black text-slate-900 tracking-tighter italic">${total.toLocaleString()}</span>
                 </div>
-                
+
                 <div className="grid grid-cols-1 gap-4">
                   <Link
                     to="/checkout"
                     onClick={closeCartDrawer}
-                    className="w-full h-16 bg-indigo-600 text-white rounded-2xl flex items-center justify-center gap-4 font-black text-[11px] uppercase tracking-[0.25em] hover:bg-indigo-700 transition-all shadow-2xl shadow-indigo-100 group active:scale-95"
+                    className="w-full h-16 bg-[#0978CD] text-white rounded-2xl flex items-center justify-center gap-4 font-black text-[11px] uppercase tracking-[0.25em] hover:bg-indigo-700 transition-all shadow-2xl shadow-indigo-100 group active:scale-95"
                   >
                     Authenticate Checkout
                     <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
@@ -162,9 +162,9 @@ export default function CartDrawer() {
                     View Selection
                   </Link>
                 </div>
-                
+
                 <div className="mt-8 flex items-center justify-center gap-2 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
-                   <Lock size={12} /> Hardware-level 256-bit encryption active
+                  <Lock size={12} /> Hardware-level 256-bit encryption active
                 </div>
               </div>
             )}

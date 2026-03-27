@@ -71,7 +71,7 @@ export default function OrderManager() {
   const statusColors = {
     pending: 'bg-amber-50 text-amber-600 border-amber-100',
     processing: 'bg-blue-50 text-blue-600 border-blue-100',
-    shipped: 'bg-indigo-50 text-indigo-600 border-indigo-100',
+    shipped: 'bg-indigo-50 text-[#0978CD] border-indigo-100',
     out_for_delivery: 'bg-purple-50 text-purple-600 border-purple-100',
     delivered: 'bg-emerald-50 text-emerald-600 border-emerald-100',
     cancelled: 'bg-red-50 text-red-600 border-red-100'

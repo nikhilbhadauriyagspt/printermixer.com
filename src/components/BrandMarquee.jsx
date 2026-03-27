@@ -33,23 +33,23 @@ export default function BrandStripSlider() {
       <div className="w-full mx-auto px-4 lg:px-16">
         <div className="flex flex-col md:flex-row items-end justify-between mb-10 gap-6">
           <div className="space-y-3">
-            <span className="text-indigo-600 font-black text-[11px] uppercase tracking-[0.3em]">Industry Leaders</span>
+            <span className="text-[#0978CD] font-black text-[11px] uppercase tracking-[0.3em]">Industry Leaders</span>
             <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tighter leading-none">
-              Shop by <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500 italic">brand.</span>
+              Shop by <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0978CD] to-blue-500 italic">brand.</span>
             </h2>
           </div>
-          
+
           <div className="flex items-center gap-3">
             <button
               id="brand-prev"
-              className="h-12 w-12 bg-white border border-slate-200 text-slate-400 rounded-2xl flex items-center justify-center hover:bg-indigo-600 hover:text-white hover:border-indigo-600 transition-all shadow-sm group"
+              className="h-12 w-12 bg-white border border-slate-200 text-slate-400 rounded-2xl flex items-center justify-center hover:bg-[#0978CD] hover:text-white hover:border-[#0978CD] transition-all shadow-sm group"
               aria-label="Previous"
             >
               <ChevronLeft size={20} className="group-active:scale-90 transition-transform" />
             </button>
             <button
               id="brand-next"
-              className="h-12 w-12 bg-white border border-slate-200 text-slate-400 rounded-2xl flex items-center justify-center hover:bg-indigo-600 hover:text-white hover:border-indigo-600 transition-all shadow-sm group"
+              className="h-12 w-12 bg-white border border-slate-200 text-slate-400 rounded-2xl flex items-center justify-center hover:bg-[#0978CD] hover:text-white hover:border-[#0978CD] transition-all shadow-sm group"
               aria-label="Next"
             >
               <ChevronRight size={20} className="group-active:scale-90 transition-transform" />

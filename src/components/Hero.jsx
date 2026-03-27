@@ -80,7 +80,7 @@ export default function Hero() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                       >
-                        <span className="inline-block px-4 py-1.5 bg-indigo-600 rounded-full text-[10px] font-black  tracking-[0.2em] mb-6">
+                        <span className="inline-block px-4 py-1.5 bg-[#0978CD] rounded-full text-[10px] font-black  tracking-[0.2em] mb-6">
                           {slide.tag}
                         </span>
                         <h2 className="text-4xl md:text-7xl font-extrabold mb-6 leading-tight tracking-tight">
@@ -92,7 +92,7 @@ export default function Hero() {
                         </p>
                         <Link
                           to="/shop"
-                          className="inline-flex items-center gap-3 px-10 py-5 bg-white text-indigo-600 rounded-xl font-black text-xs uppercase tracking-widest hover:bg-indigo-50 transition-all group/btn shadow-xl shadow-black/20"
+                          className="inline-flex items-center gap-3 px-10 py-5 bg-white text-[#0978CD] rounded-xl font-black text-xs uppercase tracking-widest hover:bg-indigo-50 transition-all group/btn shadow-xl shadow-black/20"
                         >
                           Browse Inventory <ArrowRight size={18} className="group-hover/btn:translate-x-1 transition-transform" />
                         </Link>
@@ -129,7 +129,7 @@ export default function Hero() {
             {/* Simple Trust Strip - Clickable */}
             <Link
               to="/shop"
-              className="h-24 bg-indigo-600 rounded-3xl flex items-center px-8 text-white hover:bg-indigo-700 transition-all group shadow-lg shadow-indigo-100/20 active:scale-95"
+              className="h-24 bg-[#0978CD] rounded-3xl flex items-center px-8 text-white hover:bg-indigo-700 transition-all group shadow-lg shadow-indigo-100/20 active:scale-95"
             >
               <div className="flex-1">
                 <p className="text-[10px] font-black uppercase tracking-widest opacity-70">Express Hub</p>

@@ -55,7 +55,7 @@ export default function Orders() {
       <div className="min-h-screen bg-[#f8fafc] pt-40 pb-20 font-sans px-6">
         <div className="max-w-2xl mx-auto text-center">
           <div className="h-24 w-24 rounded-[32px] bg-white flex items-center justify-center mx-auto mb-10 shadow-2xl shadow-indigo-100 border border-slate-100">
-            <Package size={40} className="text-indigo-600" strokeWidth={1.5} />
+            <Package size={40} className="text-[#0978CD]" strokeWidth={1.5} />
           </div>
           <h1 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight mb-6 leading-none">Track your order.</h1>
           <p className="text-slate-400 font-black uppercase tracking-[0.2em] text-[11px] mb-12">Login to see your full history or enter your guest email below.</p>
@@ -68,13 +68,13 @@ export default function Orders() {
               onChange={(e) => setGuestEmail(e.target.value)}
               className="flex-1 h-16 px-8 bg-transparent outline-none text-[13px] font-black uppercase transition-all placeholder:text-slate-300"
             />
-            <button className="h-16 px-12 bg-slate-900 text-white rounded-[24px] font-black text-[11px] uppercase tracking-[0.2em] hover:bg-indigo-600 transition-all shadow-xl shadow-black/20">
+            <button className="h-16 px-12 bg-slate-900 text-white rounded-[24px] font-black text-[11px] uppercase tracking-[0.2em] hover:bg-[#0978CD] transition-all shadow-xl shadow-black/20">
               Find acquisition
             </button>
           </form>
 
           <div className="pt-10 border-t border-slate-100">
-            <Link to="/login" className="text-indigo-600 font-black text-[11px] uppercase tracking-[0.25em] hover:underline underline-offset-8 decoration-2">Or Login to your professional account</Link>
+            <Link to="/login" className="text-[#0978CD] font-black text-[11px] uppercase tracking-[0.25em] hover:underline underline-offset-8 decoration-2">Or Login to your professional account</Link>
           </div>
         </div>
       </div>
@@ -82,20 +82,20 @@ export default function Orders() {
   }
 
   return (
-    <div className="min-h-screen bg-[#f8fafc] pt-24 pb-20 font-sans selection:bg-indigo-600 selection:text-white">
+    <div className="min-h-screen bg-[#f8fafc] pt-24 pb-20 font-sans selection:bg-[#0978CD] selection:text-white">
       <div className="max-w-[1400px] mx-auto px-6">
 
         {/* --- DASHBOARD HEADER --- */}
         <div className="mb-12">
           <div className="flex flex-col gap-2">
             <div className="flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.2em] text-slate-400">
-              <Link to="/" className="hover:text-indigo-600 transition-colors">Home</Link>
+              <Link to="/" className="hover:text-[#0978CD] transition-colors">Home</Link>
               <ChevronRight size={12} className="text-slate-300" />
-              <span className="text-indigo-600">Order Management</span>
+              <span className="text-[#0978CD]">Order Management</span>
             </div>
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mt-4 text-center md:text-left">
               <h1 className="text-4xl lg:text-6xl font-black text-slate-900 tracking-tighter leading-none">
-                Procurement <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500 italic">History.</span>
+                Procurement <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0978CD] to-blue-500 italic">History.</span>
               </h1>
               <div className="inline-flex items-center gap-3 px-6 py-3 rounded-2xl bg-white border border-slate-100 shadow-sm self-center md:self-auto">
                 <span className="text-slate-900 font-black">{orders.length}</span>
@@ -107,7 +107,7 @@ export default function Orders() {
 
         {loading ? (
           <div className="flex flex-col items-center justify-center py-40 bg-white rounded-[40px] border border-slate-100 shadow-sm">
-            <Loader2 className="animate-spin h-12 w-12 text-indigo-600 mb-6" strokeWidth={3} />
+            <Loader2 className="animate-spin h-12 w-12 text-[#0978CD] mb-6" strokeWidth={3} />
             <p className="text-[11px] font-black uppercase tracking-[0.3em] text-slate-400">Retrieving Records...</p>
           </div>
         ) : orders.length === 0 ? (
@@ -117,7 +117,7 @@ export default function Orders() {
             </div>
             <h3 className="text-2xl font-black text-slate-900 mb-2">No History Detected.</h3>
             <p className="text-slate-500 font-medium text-base mb-10">You haven't initiated any hardware acquisitions yet.</p>
-            <Link to="/shop" className="px-12 py-5 bg-indigo-600 text-white rounded-2xl font-black text-[11px] uppercase tracking-[0.2em] hover:bg-indigo-700 shadow-xl shadow-indigo-100 transition-all">Begin Shopping</Link>
+            <Link to="/shop" className="px-12 py-5 bg-[#0978CD] text-white rounded-2xl font-black text-[11px] uppercase tracking-[0.2em] hover:bg-indigo-700 shadow-xl shadow-indigo-100 transition-all">Begin Shopping</Link>
           </div>
         ) : (
           <div className="space-y-8">
@@ -129,7 +129,7 @@ export default function Orders() {
               >
                 <div className="p-10 border-b border-slate-50 flex flex-wrap items-center justify-between gap-10">
                   <div className="flex items-center gap-8">
-                    <div className="h-16 w-16 rounded-[20px] bg-slate-50 text-indigo-600 flex items-center justify-center shadow-sm">
+                    <div className="h-16 w-16 rounded-[20px] bg-slate-50 text-[#0978CD] flex items-center justify-center shadow-sm">
                       <Package size={28} strokeWidth={2} />
                     </div>
                     <div>
@@ -141,19 +141,19 @@ export default function Orders() {
                   <div className="flex flex-wrap gap-12">
                     <div>
                       <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 flex items-center gap-2">
-                        <Calendar size={12} className="text-indigo-600" /> Stamp
+                        <Calendar size={12} className="text-[#0978CD]" /> Stamp
                       </p>
                       <p className="text-base font-bold text-slate-900">{new Date(order.created_at).toLocaleDateString()}</p>
                     </div>
                     <div>
                       <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 flex items-center gap-2">
-                        <CreditCard size={12} className="text-indigo-600" /> Protocol
+                        <CreditCard size={12} className="text-[#0978CD]" /> Protocol
                       </p>
                       <p className="text-base font-bold text-slate-900 uppercase">{order.payment_method}</p>
                     </div>
                     <div>
                       <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2">Current status</p>
-                      <span className={`px-4 py-1.5 rounded-full text-[9px] font-black uppercase tracking-[0.1em] border ${order.status === 'delivered' ? 'bg-emerald-50 text-emerald-600 border-emerald-100' : 'bg-indigo-50 text-indigo-600 border-indigo-100'}`}>
+                      <span className={`px-4 py-1.5 rounded-full text-[9px] font-black uppercase tracking-[0.1em] border ${order.status === 'delivered' ? 'bg-emerald-50 text-emerald-600 border-emerald-100' : 'bg-indigo-50 text-[#0978CD] border-indigo-100'}`}>
                         {order.status}
                       </span>
                     </div>
@@ -182,7 +182,7 @@ export default function Orders() {
 
                   <div className="mt-10 pt-8 border-t border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-6">
                     <div className="flex items-start gap-3 text-slate-400">
-                      <MapPin size={16} className="text-indigo-600 shrink-0 mt-0.5" />
+                      <MapPin size={16} className="text-[#0978CD] shrink-0 mt-0.5" />
                       <div>
                         <p className="text-[10px] font-black uppercase tracking-widest">Logistics link</p>
                         <p className="text-[13px] font-bold text-slate-900 mt-1">{order.address}, {order.city}</p>
@@ -190,7 +190,7 @@ export default function Orders() {
                     </div>
                     <button
                       onClick={() => setSelectedOrder(order)}
-                      className="flex items-center justify-center gap-3 px-8 py-4 bg-indigo-600 text-white rounded-2xl text-[11px] font-black uppercase tracking-[0.2em] hover:bg-indigo-700 transition-all shadow-xl shadow-indigo-100 group"
+                      className="flex items-center justify-center gap-3 px-8 py-4 bg-[#0978CD] text-white rounded-2xl text-[11px] font-black uppercase tracking-[0.2em] hover:bg-indigo-700 transition-all shadow-xl shadow-indigo-100 group"
                     >
                       Track Live Stream <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                     </button>
@@ -219,7 +219,7 @@ export default function Orders() {
                 <div className="flex items-center justify-between mb-16">
                   <div>
                     <h2 className="text-4xl font-black text-slate-900 tracking-tighter italic uppercase">Track Session.</h2>
-                    <p className="text-[11px] font-black text-indigo-600 uppercase tracking-[0.4em] mt-2">Identification Code: #PTP-{selectedOrder.id}</p>
+                    <p className="text-[11px] font-black text-[#0978CD] uppercase tracking-[0.4em] mt-2">Identification Code: #PTP-{selectedOrder.id}</p>
                   </div>
                   <button onClick={() => setSelectedOrder(null)} className="h-14 w-14 rounded-2xl bg-slate-50 flex items-center justify-center text-slate-400 hover:text-red-500 hover:bg-red-50 transition-all shadow-sm">
                     <X size={24} strokeWidth={2.5} />
@@ -250,9 +250,9 @@ export default function Orders() {
                           {isActive && (
                             <motion.div
                               layoutId="status-pill"
-                              className="inline-flex items-center gap-2 mt-5 px-4 py-1.5 bg-indigo-50 text-indigo-600 rounded-full text-[9px] font-black uppercase tracking-widest border border-indigo-100 shadow-sm"
+                              className="inline-flex items-center gap-2 mt-5 px-4 py-1.5 bg-indigo-50 text-[#0978CD] rounded-full text-[9px] font-black uppercase tracking-widest border border-indigo-100 shadow-sm"
                             >
-                              <div className="h-1.5 w-1.5 rounded-full bg-indigo-600 animate-ping" /> Real-time active
+                              <div className="h-1.5 w-1.5 rounded-full bg-[#0978CD] animate-ping" /> Real-time active
                             </motion.div>
                           )}
                         </div>
@@ -269,7 +269,7 @@ export default function Orders() {
                     </div>
                     <div className="text-right">
                       <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 flex items-center gap-2 justify-end"><Clock size={12} /> Expected Link</p>
-                      <p className="text-sm font-black text-indigo-600 uppercase tracking-widest italic">2-3 Business Days</p>
+                      <p className="text-sm font-black text-[#0978CD] uppercase tracking-widest italic">2-3 Business Days</p>
                     </div>
                   </div>
                 </div>

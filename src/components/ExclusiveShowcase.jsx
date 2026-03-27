@@ -8,7 +8,7 @@ const exclusiveProducts = [
     desc: "The world's most powerful 14-inch workstation. Engineered for 8K video editing and heavy 3D workflows.",
     price: "$3,299",
     image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1000&auto=format&fit=crop",
-    accent: "from-blue-600 to-indigo-600"
+    accent: "from-blue-600 to-[#0978CD]"
   },
   {
     name: "Zenith Liquid G1",

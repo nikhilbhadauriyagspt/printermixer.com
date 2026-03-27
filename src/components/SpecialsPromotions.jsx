@@ -16,11 +16,11 @@ export default function SpecialsPromotions() {
         <div className="flex flex-col md:flex-row items-center justify-between mb-12 gap-6 text-center md:text-left">
           <div className="space-y-2">
             <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
-              Exclusive <span className="text-indigo-600">deals.</span>
+              Exclusive <span className="text-[#0978CD]">deals.</span>
             </h2>
             <p className="text-slate-400 font-bold text-sm uppercase tracking-widest">Premium Hardware • Elite Support</p>
           </div>
-          <Link to="/shop" className="px-8 py-4 bg-white border border-slate-200 rounded-2xl font-bold text-[13px] hover:bg-indigo-600 hover:text-white hover:border-indigo-600 transition-all shadow-sm">
+          <Link to="/shop" className="px-8 py-4 bg-white border border-slate-200 rounded-2xl font-bold text-[13px] hover:bg-[#0978CD] hover:text-white hover:border-[#0978CD] transition-all shadow-sm">
             View full inventory
           </Link>
         </div>
@@ -132,7 +132,7 @@ function PromoCard({ image, tag, title, subtitle, price, link, height = "h-full"
               to={link}
               className="inline-flex items-center gap-3 text-white text-[14px] font-bold group/link"
             >
-              Explore now <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover/link:bg-indigo-600 transition-all"><ArrowRight size={14} /></div>
+              Explore now <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover/link:bg-[#0978CD] transition-all"><ArrowRight size={14} /></div>
             </Link>
           </div>
         </div>

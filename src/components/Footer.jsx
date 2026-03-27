@@ -71,7 +71,7 @@ export default function Footer() {
 
               <div className="space-y-6 pt-4">
                 <div className="flex items-start gap-4 group">
-                  <div className="mt-1 p-2 bg-white/5 rounded-lg text-indigo-400 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                  <div className="mt-1 p-2 bg-white/5 rounded-lg text-indigo-400 group-hover:bg-[#0978CD] group-hover:text-white transition-colors">
                     <MapPin size={18} strokeWidth={2.5} />
                   </div>
                   <div>

@@ -97,7 +97,7 @@ export default function SearchOverlay() {
           >
             {/* Search Input Area */}
             <div className="relative flex items-center px-6 py-5 border-b border-slate-100">
-              <Search className="text-indigo-600 shrink-0" size={24} strokeWidth={2.5} />
+              <Search className="text-[#0978CD] shrink-0" size={24} strokeWidth={2.5} />
               <form onSubmit={handleSearch} className="flex-1 ml-4">
                 <input
                   ref={inputRef}
@@ -108,7 +108,7 @@ export default function SearchOverlay() {
                   className="w-full text-xl font-bold text-slate-800 placeholder:text-slate-300 outline-none bg-transparent"
                 />
               </form>
-              <button 
+              <button
                 onClick={closeSearch}
                 className="p-2 hover:bg-slate-50 rounded-xl text-slate-400 transition-colors"
               >
@@ -121,14 +121,14 @@ export default function SearchOverlay() {
               {searchQuery.length > 1 ? (
                 <div className="p-4 space-y-2">
                   <div className="px-4 py-2 flex items-center justify-between">
-                    <span className="text-[10px] font-black text-indigo-600 uppercase tracking-widest">
+                    <span className="text-[10px] font-black text-[#0978CD] uppercase tracking-widest">
                       {isSearching ? 'Scanning Catalog...' : 'Matched Hardware'}
                     </span>
                     {!isSearching && suggestions.length > 0 && (
                       <span className="text-[10px] font-bold text-slate-400">Press Enter to see all</span>
                     )}
                   </div>
-                  
+
                   <div className="space-y-1">
                     {suggestions.map((product) => (
                       <button
@@ -147,27 +147,27 @@ export default function SearchOverlay() {
                           />
                         </div>
                         <div className="flex-1 min-w-0">
-                          <h4 className="font-bold text-slate-800 text-[14px] truncate group-hover:text-indigo-600">
+                          <h4 className="font-bold text-slate-800 text-[14px] truncate group-hover:text-[#0978CD]">
                             {product.name}
                           </h4>
                           <div className="flex items-center gap-3 mt-1">
-                             <span className="text-indigo-600 font-black text-[15px]">${product.price}</span>
-                             <span className="text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded uppercase">In Stock</span>
+                            <span className="text-[#0978CD] font-black text-[15px]">${product.price}</span>
+                            <span className="text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded uppercase">In Stock</span>
                           </div>
                         </div>
                         <CornerDownLeft size={16} className="text-slate-200 opacity-0 group-hover:opacity-100 transition-all mr-2" />
                       </button>
                     ))}
-                    
+
                     {!isSearching && suggestions.length === 0 && (
                       <div className="py-12 text-center">
                         <div className="w-16 h-16 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-4">
-                           <Search size={24} className="text-slate-300" />
+                          <Search size={24} className="text-slate-300" />
                         </div>
                         <p className="text-slate-400 text-sm font-bold">No hardware found matching "{searchQuery}"</p>
-                        <button 
+                        <button
                           onClick={() => setSearchQuery('')}
-                          className="mt-4 text-indigo-600 text-xs font-black underline"
+                          className="mt-4 text-[#0978CD] text-xs font-black underline"
                         >
                           Clear Search
                         </button>
@@ -193,7 +193,7 @@ export default function SearchOverlay() {
                         <button
                           key={tag.label}
                           onClick={() => handleQuickSearch(tag.query)}
-                          className="px-4 py-2 bg-slate-50 hover:bg-indigo-50 hover:text-indigo-600 rounded-xl text-[13px] font-bold text-slate-600 transition-all border border-slate-100 hover:border-indigo-100"
+                          className="px-4 py-2 bg-slate-50 hover:bg-indigo-50 hover:text-[#0978CD] rounded-xl text-[13px] font-bold text-slate-600 transition-all border border-slate-100 hover:border-indigo-100"
                         >
                           {tag.label}
                         </button>
@@ -218,8 +218,8 @@ export default function SearchOverlay() {
                           onClick={() => handleQuickSearch(cat.slug, 'category')}
                           className="flex items-center justify-between w-full p-3.5 hover:bg-slate-50 rounded-2xl group transition-all text-left"
                         >
-                          <span className="font-bold text-slate-700 text-[14px] group-hover:text-indigo-600">{cat.label}</span>
-                          <ChevronRight size={16} className="text-slate-200 group-hover:text-indigo-600 group-hover:translate-x-1 transition-all" />
+                          <span className="font-bold text-slate-700 text-[14px] group-hover:text-[#0978CD]">{cat.label}</span>
+                          <ChevronRight size={16} className="text-slate-200 group-hover:text-[#0978CD] group-hover:translate-x-1 transition-all" />
                         </button>
                       ))}
                     </div>
@@ -228,10 +228,10 @@ export default function SearchOverlay() {
                   {/* Footer Help */}
                   <div className="p-4 bg-slate-50/50 flex items-center justify-between text-[11px] font-bold text-slate-400">
                     <div className="flex items-center gap-4">
-                       <span className="flex items-center gap-1"><kbd className="bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[10px] shadow-sm text-slate-500 font-sans">ESC</kbd> to close</span>
-                       <span className="flex items-center gap-1"><kbd className="bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[10px] shadow-sm text-slate-500 font-sans">ENTER</kbd> to search</span>
+                      <span className="flex items-center gap-1"><kbd className="bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[10px] shadow-sm text-slate-500 font-sans">ESC</kbd> to close</span>
+                      <span className="flex items-center gap-1"><kbd className="bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[10px] shadow-sm text-slate-500 font-sans">ENTER</kbd> to search</span>
                     </div>
-                    <Link to="/contact" className="text-indigo-600 hover:underline">Contact Support</Link>
+                    <Link to="/contact" className="text-[#0978CD] hover:underline">Contact Support</Link>
                   </div>
                 </div>
               )}
