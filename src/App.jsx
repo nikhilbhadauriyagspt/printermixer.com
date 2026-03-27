@@ -40,15 +40,15 @@ import UserManager from './pages/admin/UserManager';
 // Layout wrapper for customer-facing pages
 const ShopLayout = ({ children }) => {
   const location = useLocation();
-  const { category: pathCategory } = useParams();
-  const searchParams = new URLSearchParams(location.search);
-  const category = searchParams.get('category') || pathCategory;
-  const isSpecialCategory = category === 'all-in-one-printers';
+  // const { category: pathCategory } = useParams();
+  // const searchParams = new URLSearchParams(location.search);
+  // const category = searchParams.get('category') || pathCategory;
+  // const isSpecialCategory = category === 'all-in-one-printers';
 
   return (
     <div className="bg-[#f8fafc] min-h-screen flex flex-col">
-      {!isSpecialCategory && <Header />}
-      <main className={`flex-grow ${isSpecialCategory ? 'pt-0' : 'pt-[72px] md:pt-[120px] lg:pt-[172px]'}`}>
+      <Header />
+      <main className={`flex-grow pt-[72px] md:pt-[120px] lg:pt-[172px]`}>
         {children}
       </main>
       <Footer />
