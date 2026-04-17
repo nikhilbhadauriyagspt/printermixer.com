@@ -99,7 +99,7 @@ export default function Header() {
         }`}
     >
       {/* 1. TOP ANNOUNCEMENT BAR (Sleek & Minimal) */}
-      <div className="bg-[#0978CD] py-2 hidden md:block">
+      <div className="bg-[#0978CD] py-2 hidden">
         <div className="w-full mx-auto px-16 flex justify-between items-center text-[11px] font-bold text-white uppercase tracking-[0.1em]">
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1.5"><Truck size={14} /> Free Express Shipping</span>
@@ -115,7 +115,7 @@ export default function Header() {
       </div>
 
       {/* 2. MAIN HEADER (Logo | Search | Icons) */}
-      <div className="w-full mx-auto px-16 py-5 flex items-center justify-between gap-12">
+      <div className="w-full mx-auto px-16 py-1 flex items-center justify-between gap-12">
         {/* Logo */}
         <Link to="/" className="flex-shrink-0 transition-transform active:scale-95">
           <img
@@ -378,7 +378,7 @@ export default function Header() {
           </div>
 
           {/* Expert Support CTA */}
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-6 opacity-0">
             <div className="h-8 w-px bg-slate-200" />
             <div className="flex items-center gap-3">
               <div className="text-right">

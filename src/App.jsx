@@ -48,7 +48,7 @@ const ShopLayout = ({ children }) => {
   return (
     <div className="bg-[#f8fafc] min-h-screen flex flex-col">
       <Header />
-      <main className={`flex-grow pt-[72px] md:pt-[120px] lg:pt-[172px]`}>
+      <main className={`flex-grow pt-[72px] md:pt-[135px]`}>
         {children}
       </main>
       <Footer />

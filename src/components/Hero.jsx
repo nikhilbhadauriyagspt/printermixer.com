@@ -9,6 +9,8 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
 
+import Mainbanner from "@/assets/bannerr/8.png";
+
 // Import assets
 import banner1 from "@/assets/bannerr/hero-1.jpg";
 import banner2 from "@/assets/bannerr/hero-2.jpg";
@@ -45,7 +47,8 @@ const slides = [
 export default function Hero() {
   return (
     <div className="w-full bg-[#f8fafc] font-sans">
-      <div className="w-full mx-auto px-4 lg:px-16 py-6 md:py-8">
+      <img src={Mainbanner} alt="Main Banner" className="w-full h-[ 90vh]" />
+      <div className="w-full mx-auto px-4 lg:px-16 py-6 md:py-8 hidden">
         <div className="flex flex-col lg:flex-row gap-6 h-[450px] md:h-[550px] lg:h-[600px]">
 
           {/* LEFT SECTION - MAIN SLIDER (70%) */}
